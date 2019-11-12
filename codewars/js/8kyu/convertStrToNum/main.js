@@ -10,6 +10,7 @@ stringToNumber("605" ) == 605
 stringToNumber("1405") == 1405
 stringToNumber("-7"  ) == -7 */
 
+
 var stringToNumber = function(str){
    const count = parseInt(str)
   return count
