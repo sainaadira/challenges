@@ -18,7 +18,7 @@ should return "found the needle at position 5" */
 
 
 function findNeedle(haystack) {
-  var needleIndex = haystack.indexOf('needle');
+  let needleIndex = haystack.indexOf('needle');
   return 'found the needle at position ' + needleIndex;
 }
 
