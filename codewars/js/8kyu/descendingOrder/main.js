@@ -15,6 +15,5 @@ function descendingOrder(n){
 let num = Array.from(String (n), Number)
     num = num.sort().reverse().join('')
 
-
   return parseInt(num)
 }
