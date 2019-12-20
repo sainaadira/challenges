@@ -13,6 +13,7 @@ if bmi > 30 return "Obese" */
 
 function bmi(weight, height) {
   let calc = weight/Math.pow(height,2)
+  // Math.pow(base, exponent) -- in this case height is the base and the exponent is 2.
 
   if (calc <= 18.5) {
     return 'Underweight'
