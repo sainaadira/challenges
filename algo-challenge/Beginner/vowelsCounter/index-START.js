@@ -6,7 +6,7 @@ e.g vowelsCounter('anehizxcv') // will return 3
 
 
 const vowelsCounter = (text) => {
-    let vowels = ['a', 'e', 'i', 'o', 'u']
+    const vowels = ['a', 'e', 'i', 'o', 'u']
     let count = 0
 
     for (let i = 0; i < text.length; i++) {
