@@ -12,7 +12,7 @@ const chunkArray = (array, size) => {
     })
     return filteredArr
 }
-console.log(chunkArray([1, 2, 3, 4], [5, 6, 1, 2, 3]))
+chunkArray([1, 2, 3, 4], [5, 6, 1, 2, 3])
 
 
 module.exports = chunkArray
