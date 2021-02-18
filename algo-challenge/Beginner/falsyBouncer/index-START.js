@@ -6,9 +6,11 @@ E.g  falsyBouncer([1, 0, null, '', 5]) // should return [1,5]
 */
 
 
-function falsyBouncer(array) {
-    // Code goes here
+const falsyBouncer = (array) => {
+    return array.filter(el => Boolean(el))
 }
+
+falsyBouncer(['', 1, 5, 0, null, NaN, 6, undefined])
 
 
 module.exports = falsyBouncer
