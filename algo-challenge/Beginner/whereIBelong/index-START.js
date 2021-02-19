@@ -12,7 +12,7 @@ than 1(index 0), but less than 2(index 1).
 const whereDoIBelong = (arr, num) => {
    // pushing the number into the array
    arr.push(num)
-   // sort through the array in ascending order
+   // sort the array in ascending order
    arr.sort((a, b) => a - b)
    // return the index of the newly pushed number
    return arr.indexOf(num)
