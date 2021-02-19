@@ -11,7 +11,7 @@ const palindromeChecker = (text) => {
     return backwardStr === text
 }
 
-console.log(palindromeChecker('racecar'))
+palindromeChecker('racecar')
 
 
 
