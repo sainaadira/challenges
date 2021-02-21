@@ -5,7 +5,7 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
 
-function longestWord(text) {
+const longestWord = (text) => {
     return text.split('').reverse().join('')
 }
 
