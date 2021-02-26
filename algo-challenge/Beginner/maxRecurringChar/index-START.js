@@ -3,7 +3,7 @@ Given a string of text, find and return the most recurring character.
 e.g maxRecurringChar('aabacada') // will return 'a'
 */
 
-// data working with: strings
+// data working with: strings, objects, arrays
 
 const maxRecurringChar = (text) => {
     let characters = {}
