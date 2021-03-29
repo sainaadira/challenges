@@ -19,6 +19,4 @@ orderedCount("abracadabra")
 
 */
 
-const orderedCount = text => {
-  return [...new Set([...text])].map(el => [el, [...text].filter(x => x === el).length])
-}
+const orderedCount = text => [...new Set([...text])].map(el => [el, [...text].filter(x => x === el).length])
