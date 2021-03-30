@@ -20,10 +20,9 @@ convert my array of numbers into a number with parseInt
 parse int takes 2 params, a string and a radix (usually 2)
 */
 
+// parseInt converts to whole number
+//joining arr to string with a base of 2
+
+const binaryArrayToNumber = arr => parseInt(arr.join(''), 2)
 
 
-const binaryArrayToNumber = arr => {
-  // parseInt converts to whole number
-  //joining arr to string with a base of 2
-  return parseInt(arr.join(''), 2)
-};
