@@ -19,6 +19,4 @@ const evensAndOdds = num => {
 }
 
 // sinplified
-const evensAndOdds = num => {
-  return num.toString(num % 2 ? 16 : 2)
-}
+const evensAndOdds = num => num.toString(num % 2 ? 16 : 2)
