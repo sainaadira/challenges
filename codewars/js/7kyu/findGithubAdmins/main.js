@@ -21,6 +21,4 @@ write a function that when executed as findAdmin(list1, 'JavaScript') returns on
 */
 
 
-const findAdmin = (list, lang) => {
-  return list.filter(dev => dev.language === lang && dev.githubAdmin === 'yes')
-}
+const findAdmin = (list, lang) => list.filter(dev => dev.language === lang && dev.githubAdmin === 'yes')
