@@ -16,11 +16,10 @@ returns: array of numbers
 
 */
 
+// String() object is used to manipulate a sequence of chars
+// split('') will convert substrings into an array
+// map() calls a function of every element in the array and converts the 
+//strings back into numbers
+const digitize = n => String(n).split('').map(Number);
 
-const digitize = n => {
-  // String() object is used to manipulate a sequence of chars
-  // split('') will convert substrings into an array
-  // map() calls a function of every element in the array and converts the 
-  //strings back into numbers
-  return String(n).split('').map(Number);
-}
+
