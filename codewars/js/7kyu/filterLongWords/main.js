@@ -8,9 +8,6 @@ R: array
 E: "The quick brown fox jumps over the lazy dog", 4) =  ['quick', 'brown', 'jumps']
 P: split string into an array
    filter through array and check for the length words longer than n
-
 */
 
-const filterLongWords = (sentence, n) => {
-  return sentence.split(' ').filter(el => el.length > n)
-}
+const filterLongWords = (sentence, n) => sentence.split(' ').filter(el => el.length > n)
