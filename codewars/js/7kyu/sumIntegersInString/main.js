@@ -32,5 +32,5 @@ const sumIntegers = str => {
       temp = ''
     }
   }
-  return numArr.map(num => Number(num)).reduce((acc, num) => acc + num)
+  return numArr.map(num => Number(num)).reduce((acc, num) => acc + num, 0)
 }
