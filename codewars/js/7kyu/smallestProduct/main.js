@@ -36,6 +36,6 @@ const smallestProduct = arr => {
  to grab total product, use reduce()
  return array
  */
-const smallestProduct = arr => {
-  return Math.min(...arr.map(el => el.reduce((a, b) => a * b)))
-}
+
+const smallestProduct = arr => Math.min(...arr.map(el => el.reduce((a, b) => a * b)))
+
