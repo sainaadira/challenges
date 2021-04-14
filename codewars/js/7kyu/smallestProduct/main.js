@@ -18,7 +18,6 @@ P: create empty array for result
    to find smallest product, Math.min()
    pass in the result
    return result
-
  */
 
 const smallestProduct = arr => {
