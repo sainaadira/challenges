@@ -17,7 +17,7 @@ const digitize = n => {
   n = `${n}.`.split('').reverse()
   let newArr = []
 
-  for (let i = 0; i < x.length; i++) {
+  for (let i = 0; i < n.length; i++) {
     newArr.push(+ n[i])
   }
   return newArr
