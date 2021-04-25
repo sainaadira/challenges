@@ -5,7 +5,7 @@ Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carr
 
 In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". You have function with one side of the DNA (string, except for Haskell); you need to get the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
 
-data working with: strings/arrays
+data working with: strings
 returns: string
 
 example:
@@ -14,10 +14,36 @@ DNAStrand ("ATTGC") // return "TAACG"
 DNAStrand ("GTAT") // return "CATA"
 */
 
+
 const DNAStrand = dna => {
+  let dnaResult = ''
+  for (let i = 0; i < dna.length; i++) {
+    switch (dna[i]) {
+      case 'A':
+        dnaResult += 'T'
+        break;
+      case 'T':
+        dnaResult += 'A'
+        break;
+      case 'C':
+        dnaResult += 'G'
+        break;
+      case 'G':
+        dnaResult += 'C'
+    }
+  }
+
+  return dnaResult
+
+}
+
+
+//oringal code
+
+/* const DNAStrand = dna => {
   // start off with an empty arr to push reassigned results
   let arr = []
-  // loop through dna param (string) 
+  // loop through dna param (string)
   for (let i = 0; i < dna.length; i++) {
     // grabbing the index of all dna strings with charAt() and reassigning the symbols with its complement A & T | C & G then pushing the new assignment into the empty arr
     let strand = dna.charAt(i)
@@ -39,4 +65,4 @@ const DNAStrand = dna => {
   let result = arr.join('')
   // returning final result
   return result
-}
+} */
