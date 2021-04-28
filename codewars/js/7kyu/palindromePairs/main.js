@@ -16,7 +16,7 @@ examples:
 const palindromePairs = words => {
   // empty array to push pairs into
   const pairs = []
-  //loop through words initalized with i
+  //loop through  words initalized with i
   for (let i = 0; i < words.length; i++) {
     // loop through words initalized with j
     for (let j = 0; j < words.length; j++) {
@@ -27,9 +27,10 @@ const palindromePairs = words => {
         // palindrome words assigned here
         let backwards = [...forwards].reverse().join('')
         // if words are the same forward and backward
-        if (forwards === backwards)
+        if (forwards === backwards) {
           // push them into pairs array
           pairs.push([i, j])
+        }
       }
     }
   }
