@@ -4,8 +4,6 @@ return the equivalent of the sentence when capitalised. E.g
   capSentence('the tales of scotch!') // would return 'The Tales Of Scotch!' 
 */
 
-
-
 const capSentence = (text) => {
   let capSen = []
   let sentence = text.toUpperCase().split(' ')
