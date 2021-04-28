@@ -13,10 +13,10 @@ returns: string with moved vowels to end of string
 */
 
 const moveVowel = (input) => {
-  const vowelsArr = ['a', 'e', 'i', 'o', 'u'];
-  let arr = input.split('');
-  let consonant = arr.filter(el => !vowelsArr.includes(el)).join('');
-  let vowel = arr.filter(el => vowelsArr.includes(el)).join('');
-  return consonant + vowel;
+  const vowelsArr = ['a', 'e', 'i', 'o', 'u']
+  let arr = input.split('')
+  let consonant = arr.filter(el => !vowelsArr.includes(el)).join('')
+  let vowel = arr.filter(el => vowelsArr.includes(el)).join('')
+  return consonant + vowel
 }
 
