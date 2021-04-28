@@ -13,7 +13,7 @@ When the last petal was torn there were cries of excitement, dreams, surging tho
 
 Your goal in this kata is to determine which phrase the girls would say for a flower of a given number of petals, where nb_petals > 0.
 
-data working with: string
+data working with: array
 returns:string
 */
 
@@ -26,6 +26,6 @@ const howMuchILoveYou = nbPetals => {
     'madly',
     'not at all'
   ]
-  return lovePhrases[(nbPetals - 1)] % 6
+  return lovePhrases[(nbPetals - 1 % 6)]
 
 }
