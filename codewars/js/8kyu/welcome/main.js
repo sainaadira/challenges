@@ -49,6 +49,5 @@ const greet = language => {
     welsh: 'Croeso'
   }
   return greeting[language] || greeting.english
-
 }
 
