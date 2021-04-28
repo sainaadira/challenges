@@ -12,6 +12,7 @@ Input	Output
  "Rapper"	"Cristal"
  *anything else*	"Beer"   */
 
+//my solution was correct i just captialized the cases and thats why it wouldn't pass the attempt 
 
 function getDrinkByProfession(param){
 param = param.toLowercase()
