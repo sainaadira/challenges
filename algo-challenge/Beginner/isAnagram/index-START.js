@@ -12,7 +12,7 @@ const isAnagram = (stringA, stringB) => {
     return compareStr(stringA) === compareStr(stringB)
 }
 
-console.log(isAnagram('listen', 'silent'))
+isAnagram('listen', 'silent')
 
 
 module.exports = isAnagram
