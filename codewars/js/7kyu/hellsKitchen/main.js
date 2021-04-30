@@ -15,12 +15,18 @@ returns: string
 */
 
 const gordon = a => {
+  // splitting string into arr of text
   let array = a.split(' ')
+  // emply array for final reply
   let reply = []
-
+  // loop through length of array
   for (let i = 0; i < array.length; i++) {
+    // converting words from array to uppercase and concatenating '!!!!' at the end of each word.
     let words = (array[i].toUpperCase() + '!!!!').split('')
+    // second loop to loop through array of newly convertd words
     for (let j = 0; j < words.length; j++) {
+      // switch statement if word has an A change it to @ 
+      // if word contains rest of the vowels change to *
       switch (words[j]) {
         case 'A':
           words[j] = '@'
@@ -33,7 +39,9 @@ const gordon = a => {
           break;
       }
     }
+    // converting words back into a string and pushing into reply array
     reply.push(words.join(''))
   }
+  // return the reply array converted back into a string
   return reply.join(' ')
 }
