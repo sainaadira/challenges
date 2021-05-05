@@ -18,3 +18,16 @@ const mergeArrays = (arr1, arr2) => {
   // sort the arr ascending order with sort method
   return [...new Set([...arr1, ...arr2])].sort((a, b) => a - b)
 }
+
+// second solution
+const mergeArrays = (arr1, arr2) => {
+  // joining the two arrays into one using spread syntax
+  let joined = [...arr1, ...arr2]
+  return joined
+    // sort through joined array in ascending order
+    .sort((a, b) => a - b)
+    // filter through joined arr and return a new array of elements where the the elements equal the index: removes all duplicates
+    .filter((el, index, arr) => {
+      return arr.indexOf(el) === index
+    })
+}
