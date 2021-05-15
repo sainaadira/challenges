@@ -10,34 +10,29 @@ Input	Output
  "Bike Gang Member"	"Moonshine"
  "Politician"	"Your tax dollars"
  "Rapper"	"Cristal"
- *anything else*	"Beer"   */
+ *anything else*	"Beer"  
 
-//my solution was correct i just captialized the cases and thats why it wouldn't pass the attempt 
+ data working with: string/ obj
+ returns => string
 
-function getDrinkByProfession(param){
-param = param.toLowercase()
+__pseudocode__
+ convert string param to lowercase
+ store all input/output in an obj
+ bracket notation to access param from drink obj
+ or return 'beer' for all other inputs
+ 
+ */
 
-switch(param){
-case 'jabroni':
-return 'Patron Tequila'
-break;
-case 'school counselor':
-return 'Anything with Alcohol'
-break;
-case 'programmer':
-return 'Hipster Craft Beer'
-break;
-case 'bike gang member':
-return 'Moonshine'
-break;
-case 'politician':
-return 'Your tax dollars'
-break;
-case 'rapper':
-return 'Cristal'
-break;
-default:
-return 'Beer'
-}
 
+const getDrinkByProfession = param => {
+  const drinks = {
+    'jabroni': 'Patron Tequila',
+    'school counselor': 'Anything with Alcohol',
+    'programmer': 'Hipster Craft Beer',
+    'bike gang member': 'Moonshine',
+    'politician': 'Your tax dollars',
+    'rapper': 'Cristal'
+  }
+
+  return drinks[param.toLowerCase()] || 'Beer'
 }
