@@ -8,11 +8,11 @@ Note: If the number is a multiple of both 3 and 5, only count it once. Also, if 
 
 
 
-function solution(number){
+const solution = number => {
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  let array = [0,0]
-  for(i = 1; i < number; i ++){
-    if(i % 3 == 0 || i % 5 == 0){
+  let array = [0, 0]
+  for (i = 1; i < number; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
       array.push(i)
     }
   }
