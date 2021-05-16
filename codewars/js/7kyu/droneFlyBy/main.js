@@ -13,10 +13,9 @@ Return the resulting lamps string.
 */
 
 
-function flyBy(lamps, drone){
-  for (let i = 0; i < drone.length; i++){
+const flyBy = (lamps, drone) => {
+  for (let i = 0; i < drone.length; i++) {
     lamps = lamps.replace(lamps[i], 'o');
   }
-
   return lamps
 }
