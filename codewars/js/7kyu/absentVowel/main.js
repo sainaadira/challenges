@@ -20,7 +20,6 @@ returns: number
 MDN SOURCES
 The findIndex() method returns the index of the first element in the array that satisfies the provided testing function
 The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
-
 */
 
 
