@@ -35,6 +35,6 @@ function calculateTip(amount, rating) {
       return Math.ceil(amount * 0.20);
       break;
     default:
-      return 'Rating not recognised'
+      return 'Rating not recognized'
   }
 }

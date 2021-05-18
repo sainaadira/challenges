@@ -9,11 +9,11 @@ E.g. Input: "aa", "bb" , "cc" => Output: "abcabc"
 Note: You can expect all of the inputs to be the same length. */
 
 
-function tripleTrouble(one, two, three){
-    let string = ''
+const tripleTrouble = (one, two, three) => {
+  let string = ''
 
-     for (let i = 0; i < one.length; i ++){
-       string +=  `${one[i]}${two[i]}${three[i]}`
-
-     } return string
- }
+  for (let i = 0; i < one.length; i++) {
+    string += `${one[i]}${two[i]}${three[i]}`
+  }
+  return string
+}

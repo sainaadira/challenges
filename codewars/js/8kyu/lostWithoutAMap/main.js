@@ -9,6 +9,6 @@ For example:
 For the beginner, try to use the map method - it comes in very handy quite a lot so is a good one to know.*/
 
 
-function maps(x){
-  return x.map (num => num * 2)
+const maps = x => {
+  return x.map(num => num * 2)
 }

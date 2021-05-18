@@ -23,9 +23,8 @@
 // makeNegative(-13)
 
 
-function makeNegative(num)
-{
-return -Math.abs(num)
+const makeNegative = num => {
+  return -Math.abs(num)
 }
 
-console.log(makeNegative(-13))
+

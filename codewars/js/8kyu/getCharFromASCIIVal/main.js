@@ -7,6 +7,6 @@ get_char(65) # => 'A' */
 
 
 
-function getChar(c){
+const getChar = c => {
   return String.fromCharCode(c)
 }

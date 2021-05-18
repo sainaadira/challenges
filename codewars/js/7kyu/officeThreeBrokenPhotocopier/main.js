@@ -30,7 +30,7 @@ const broken = x => {
 
 
 
-// my og solution with if/else statement
+// my og solution with conditional statement
 const broken = x => {
   let str = x.split('')
   return str.map(el => {

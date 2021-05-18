@@ -13,15 +13,15 @@ So, the function should return 26 because sum of minimums is as 1 + 5 + 20 = 26
 
 Note: You will be always given non-empty array containing Positive values. */
 
-function sumOfMinimums(arr) {
+const sumOfMinimums = arr => {
   // first start with the sum of arrays being 0
   let sum = 0
   // i need to iterate ever the array to grab the length of arrays
   // to grab the minimum number from each row.
-  for(let i = 0; i < arr.length; i ++){
+  for (let i = 0; i < arr.length; i++) {
     sum += Math.min(...arr[i])
     // using Math.min() to grab the minimum number from both arrays
     // the spread operator is used to expand the the Math.min() method to the 2D array
 
-  }  return sum
+  } return sum
 }

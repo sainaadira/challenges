@@ -21,6 +21,5 @@ const digitize = n => {
     newArr.push(+ n[i])
   }
   return newArr
-
 }
 
