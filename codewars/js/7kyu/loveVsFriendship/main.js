@@ -11,8 +11,8 @@ So friendship is twice stronger than love :-)
 The input will always be in lowercase and never be empty.*/
 
 
-function wordsToMarks(string) {
-  placing any number before the alphabet to get a numberic value for each letter.
+const wordsToMarks = string => {
+  // placing any number before the alphabet to get a numberic value for each letter.
   let letterVal = "7abcdefghijklmnopqrstuvwxyz";
   let finalString = 0;
   for (let i = 0; i < string.length; i++) {
