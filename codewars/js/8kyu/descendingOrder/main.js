@@ -8,12 +8,15 @@ Input: 21445 Output: 54421
 
 Input: 145263 Output: 654321
 
-Input: 1254859723 Output: 9875543221*/
+Input: 1254859723 Output: 9875543221
 
 
-function descendingOrder(n){
-let num = Array.from(String (n), Number)
-    num = num.sort().reverse().join('')
+*/
+
+
+const descendingOrder = n => {
+  let num = Array.from(String(n), Number)
+  num = num.sort().reverse().join('')
 
   return parseInt(num)
 }

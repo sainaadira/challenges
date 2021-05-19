@@ -8,10 +8,15 @@ Examples
 stringToNumber("1234") == 1234
 stringToNumber("605" ) == 605
 stringToNumber("1405") == 1405
-stringToNumber("-7"  ) == -7 */
+stringToNumber("-7"  ) == -7
 
+data working with: string
+returns => number
 
-var stringToNumber = function(str){
-   const count = parseInt(str)
-  return count
+using built in Number method to convert string to number
+
+*/
+
+const stringToNumber = str => {
+  return Number(str)
 }

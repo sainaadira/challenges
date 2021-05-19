@@ -9,6 +9,6 @@ character in the string "word" upper case). Don't worry about numbers, special c
 or non-string types being passed to the function. The string lengths will be from 1 character up to 10 characters, but will never be empty.*/
 
 
-function capitalizeWord(word) {
+const capitalizeWord = word => {
   return word[0].toUpperCase() + word.slice(1);
 }

@@ -11,9 +11,6 @@ Great: tip 15%
 Excellent: tip 20%
 The rating is case insensitive (so "great" = "GREAT"). If an unrecognised rating is received, then you need to return:
 
-"Rating not recognised" in Javascript, Python and Ruby...
-...or null in Java
-...or -1 in C#
 Because you're a nice person, you always round up the tip, regardless of the service.
 */
 

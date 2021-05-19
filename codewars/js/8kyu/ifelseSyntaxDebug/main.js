@@ -8,10 +8,10 @@ checkAlive/CheckAlive/check_alive should return true if the player's health is g
 The function receives one parameter health which will always be a whole number between -10 and 10.
 */
 
-function checkAlive (health) {
-  if(health > 0){
+const checkAlive = health => {
+  if (health > 0) {
     return true
-  }else if(health <= 0){
+  } else if (health <= 0) {
     return false
   }
 }

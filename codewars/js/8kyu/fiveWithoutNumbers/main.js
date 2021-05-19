@@ -8,6 +8,6 @@ Good luck :)*/
 
 
 
-  function unusualFive() {
-     return 'happy'.length
-    }
+const unusualFive = () => {
+  return 'hello'.length
+}

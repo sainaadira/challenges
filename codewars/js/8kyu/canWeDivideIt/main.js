@@ -17,7 +17,7 @@ A few cases:
 (15, -5, 3)   ->  true
 */
 
-//long solution
+
 const isDivideBy = (number, a, b) => {
   if (number % a === 0 && number % b === 0) {
     return true
@@ -26,5 +26,6 @@ const isDivideBy = (number, a, b) => {
   }
 }
 
-//refactored 
-const isDivideBy = (number, a, b)  => number % a === 0  && number % b === 0
+// using ternary operator 
+const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
+

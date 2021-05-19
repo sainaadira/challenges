@@ -8,16 +8,14 @@
  * arr2 = [2, 4, 6, 8, 10]
 */
 
+const countBy = (x, n) => {
+    let arr = []
 
-function countBy(x, n) {
-    var z = [];
-    // looping through numbers and and increment by 1
-    for (i = 1; i <= n; i++) {
-        z.push(i * x);
+    for (let i = 1; i <= n; i++) {
+        arr.push(i * x)
     }
-    return z;
-    
+    return arr
 }
-console.log(countBy(3, 6)) 
+
 
 

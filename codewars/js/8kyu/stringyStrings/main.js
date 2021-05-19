@@ -13,14 +13,14 @@ with size 12 should return : '101010101010'.
 The size will always be positive and will only use whole numbers.
 */
 
-function stringy(size) {
+const stringy = size => {
   let result = ''
 
-  for (let i = 1; i <= size; i++ ){
-    if (i % 2 === 0){
-      result = result + '0'
-    }else {
-      result = result + '1'
+  for (let i = 1; i <= size; i++) {
+    if (i % 2 === 0) {
+      result += '0'
+    } else {
+      result += '1'
     }
   }
   return result

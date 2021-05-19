@@ -2,7 +2,7 @@
 
 // Write function makeUpperCase.
 
-function makeUpperCase(str){
+const makeUpperCase = (str) => {
   return str.toUpperCase()
 }
-makeUpperCase('javascript is fun')
+

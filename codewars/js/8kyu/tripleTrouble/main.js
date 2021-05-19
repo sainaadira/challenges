@@ -6,7 +6,18 @@ Create a function that will return a string that combines all of the letters of 
 
 E.g. Input: "aa", "bb" , "cc" => Output: "abcabc"
 
-Note: You can expect all of the inputs to be the same length. */
+Note: You can expect all of the inputs to be the same length.
+
+data working with: string
+returns => string
+
+___pseudocode___
+create empty string to store input
+loop through first param
+use template literal for string interpolation adding variables 
+add them to string and return
+
+*/
 
 
 const tripleTrouble = (one, two, three) => {

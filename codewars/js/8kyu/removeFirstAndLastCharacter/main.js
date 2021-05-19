@@ -9,5 +9,4 @@ const removeChar = str => {
     let answer = str.slice(1, -1)
     // slice method removes characters from string and returns a new string starting from the index 1 to remove the 'h' and only get 'e' in hello. then -1 means counting from right towards the left and removing the first index.
     return answer
-};
-;
+}

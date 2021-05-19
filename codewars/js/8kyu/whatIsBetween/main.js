@@ -6,7 +6,17 @@ For example:
 
 a = 1
 b = 4
---> [1, 2, 3, 4] */
+--> [1, 2, 3, 4]
+
+data working with: array
+return => array with intergers between the a, b params
+
+___pseudocode___
+create am empty arr to store final result
+loop through arr where i = a and b is less than or equal to b
+push into a new arr
+return arr
+*/
 
 
 const between = (a, b) => {

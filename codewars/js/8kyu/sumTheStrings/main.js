@@ -6,7 +6,6 @@ Create a function that takes 2 positive integers in form of a string as an input
   sumStr("34", "5")   // should output "39" */
 
 
-  function sumStr(a,b) {
-    
-  return  `${Number(a) + Number(b)}`
+const sumStr = (a, b) => {
+  return `${Number(a) + Number(b)}`
 }

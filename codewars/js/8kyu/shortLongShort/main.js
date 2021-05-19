@@ -8,9 +8,10 @@ solution("1", "22") // returns "1221"
 solution("22", "1") // returns "1221"
 */
 
-function solution(a, b) {
+const solution = (a, b) => {
     if (a.length < b.length) {
         return a + b + a;
     } else {
         return b + a + b;
     }
+}

@@ -9,6 +9,6 @@ nthEven(100) //=> 198
 nthEven(1298734) //=> 2597466 */
 
 
-function nthEven(n){
-  return (n-1) * 2
+const nthEven = n => {
+  return (n - 1) * 2
 }

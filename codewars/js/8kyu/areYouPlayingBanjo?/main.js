@@ -12,11 +12,11 @@ Names given are always valid strings.*/
 
 
 
-function areYouPlayingBanjo(name) {
-  if(name.toLowerCase().charAt(0) === 'r'){
+const areYouPlayingBanjo = name => {
+  if (name.toLowerCase().charAt(0) === 'r') {
     return `${name} plays banjo`
 
-  }else{
+  } else {
     return `${name} does not play banjo`
   }
 }

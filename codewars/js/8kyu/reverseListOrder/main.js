@@ -9,6 +9,16 @@ reverseList([3,1,5,4]) == [4,5,1,3]
 
 */
 
-function reverseList(list) {
+const reverseList = list => {
   return list.reverse()
+}
+
+// reversing using a loop without reverse method
+const listReverse = list => {
+  let arr = []
+
+  for (let i = list.length - 1; i >= 0; i--) {
+    arr.push(list[i])
+  }
+  return arr
 }

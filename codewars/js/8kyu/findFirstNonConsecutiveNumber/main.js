@@ -12,7 +12,7 @@ The array will always have at least 2 elements1 and all elements will be numbers
 
 
 
-function firstNonConsecutive(arr) {
+const firstNonConsecutive = arr => {
   for (let i = 0; i < arr.length - 1; ++i) {
     if (arr[i] + 1 !== arr[i + 1]) {
       return arr[i + 1]
