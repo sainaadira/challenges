@@ -25,14 +25,6 @@ __pseudocode__
 
 const broken = x => {
   let str = x.split('')
-  return str.map(el => el === '0' ? '1' : '0').join('')
-}
-
-
-
-// my og solution with conditional statement
-const broken = x => {
-  let str = x.split('')
   return str.map(el => {
     if (el === '0') {
       return '1'
@@ -41,5 +33,4 @@ const broken = x => {
     }
   })
     .join('')
-
 }
