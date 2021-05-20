@@ -11,6 +11,6 @@ Note: String will have at least one element; words will always be separated by a
 
 
 
-function addLength(str) {
+const addLength = str => {
   return str.split(' ').map(word => `${word} ${word.length}`)
 }
