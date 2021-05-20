@@ -11,9 +11,16 @@ Note! if n or m < 0 return 0! Waiting for translations and Feedback! Thanks!
 */
 
 
-function paperwork(n, m) {
+const paperwork = (n, m) => {
   if (m < 0 || n < 0) {
-    return 0;
+    return 0
   }
-  return m * n;
+  return m * n
 }
+
+
+// with ternary operator
+const paperwork = (n, m) => {
+  return m < 0 || n < 0 ? 0 : m * n
+}
+
