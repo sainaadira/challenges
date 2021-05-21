@@ -10,13 +10,19 @@ You can assume that all values are integers. Do not mutate the input array/list.
 
 */
 
-function invert(array) {
+const invert = array => {
   // create an empty array
   let arr = [];
   //loop through the array and obtain the length
-  for(let i = 0; i < array.length; i++){
+  for (let i = 0; i < array.length; i++) {
     //push negative values into new array
-    newArr.push(-array[i]);
+    arr.push(-array[i]);
   }
-   return arr;
+  return arr;
+}
+
+
+// using map()
+const invert = array => {
+  return array.map(num => -num)
 }

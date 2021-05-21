@@ -13,6 +13,6 @@ For this kata, don't worry about edge cases like where unexpected input is passe
 
 
 
-function booleanToString(b){
-  return b.toString()
+const booleanToString = b => {
+  return String(b)
 }

@@ -7,11 +7,6 @@ Numbers may be positive or negative, integers or floats.
 Floats are considered UNeven for this kata. */
 
 
-function testEven(n) {
-    if (n % 2 === 0){
-     return true
-    } else {
-     return false
-     }
-
+const testEven = n => {
+    return n % 2 === 0 ? true : false
 }

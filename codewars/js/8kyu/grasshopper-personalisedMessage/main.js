@@ -8,14 +8,14 @@ name equals owner	'Hello boss'
 otherwise	'Hello guest' */
 
 
-function greet (name, owner) {
+const greet = (name, owner) => {
   if (name === owner) {
     return 'Hello boss';
   }
   return 'Hello guest';
 }
 
-using tenary operators
-function greet (name, owner){
+//using tenary operators
+const greet = (name, owner) => {
   return name == owner ? 'Hello Boss' : 'Hello guest'
 }

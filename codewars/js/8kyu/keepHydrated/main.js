@@ -16,5 +16,6 @@ time = 11.8--> litres = 5
 */
 
 const litres = time => {
-  return Math.floor(time / 2)
+  let unit = time / 2
+  return Math.floor(unit)
 }

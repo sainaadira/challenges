@@ -10,8 +10,8 @@ solution("22", "1") // returns "1221"
 
 const solution = (a, b) => {
     if (a.length < b.length) {
-        return a + b + a;
+        return a + b + a
     } else {
-        return b + a + b;
+        return b + a + b
     }
 }

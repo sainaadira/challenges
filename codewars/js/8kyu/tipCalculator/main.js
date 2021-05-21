@@ -12,26 +12,32 @@ Excellent: tip 20%
 The rating is case insensitive (so "great" = "GREAT"). If an unrecognised rating is received, then you need to return:
 
 Because you're a nice person, you always round up the tip, regardless of the service.
+
+data working with: number and strings
+return: string
+
+as a reminder:
+math.ceil()- rounds up to the nearest whole integer
 */
 
-function calculateTip(amount, rating) {
+const calculateTip = (amount, rating) => {
   switch (rating.toLowerCase()) {
     case 'terrible':
-      return 0;
+      return 0
       break;
     case 'poor':
-      return Math.ceil(amount * 0.05);
+      return Math.ceil(amount * .05)
       break;
     case 'good':
-      return Math.ceil(amount * 0.10);
+      return Math.ceil(amount * .10)
       break;
     case 'great':
-      return Math.ceil(amount * 0.15);
+      return Math.ceil(amount * .15)
       break;
     case 'excellent':
-      return Math.ceil(amount * 0.20);
+      return Math.ceil(amount * .20)
       break;
     default:
-      return 'Rating not recognized'
+      return 'Rating not recognised'
   }
 }

@@ -9,17 +9,22 @@ Example:
 data working with: numbers + arrays
 returns: array
 
-to split and reverse: turn x into a string
+__pseudocode__
+create an empty array to store final result
+turn n (number) into a string
+split() - turns string into an arr of strings
+reverse() the order of the strings
 
+loop through num and push into arr
+convert strings back into a number with Number obj
 */
 
 const digitize = n => {
-  n = `${n}.`.split('').reverse()
-  let newArr = []
+  let num = `${n}`.split('').reverse()
 
-  for (let i = 0; i < n.length; i++) {
-    newArr.push(+ n[i])
+  let arr = []
+  for (let i = 0; i < num.length; i++) {
+    arr.push(Number(num[i]))
   }
-  return newArr
+  return arr
 }
-

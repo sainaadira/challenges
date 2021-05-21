@@ -21,11 +21,30 @@ const howMuchILoveYou = nbPetals => {
   let lovePhrases = [
     'I love you',
     'a little',
-    'alot',
+    'a lot',
     'passionately',
     'madly',
     'not at all'
   ]
-  return lovePhrases[(nbPetals - 1 % 6)]
+  return lovePhrases[(nbPetals - 1) % 6]
+}
 
+
+// with switch case
+const howMuchILoveYou = nbPetals => {
+  let answer = nbPetals % 6;
+  switch (answer) {
+    case 1:
+      return 'I love you';
+    case 2:
+      return 'a little';
+    case 3:
+      return 'a lot';
+    case 4:
+      return 'passionately';
+    case 5:
+      return 'madly';
+    default:
+      return 'not at all';
+  }
 }
