@@ -38,31 +38,3 @@ const DNAStrand = dna => {
 }
 
 
-//oringal code
-
-/* const DNAStrand = dna => {
-  // start off with an empty arr to push reassigned results
-  let arr = []
-  // loop through dna param (string)
-  for (let i = 0; i < dna.length; i++) {
-    // grabbing the index of all dna strings with charAt() and reassigning the symbols with its complement A & T | C & G then pushing the new assignment into the empty arr
-    let strand = dna.charAt(i)
-    if (strand === 'A') {
-      strand = 'T'
-      arr.push(strand)
-    } else if (strand === 'T') {
-      strand = 'A'
-      arr.push(strand)
-    } else if (strand === 'C') {
-      strand = 'G'
-      arr.push(strand)
-    } else if (strand === 'G') {
-      strand = 'C'
-      arr.push(strand)
-    }
-  }
-  // turning the arr back into string
-  let result = arr.join('')
-  // returning final result
-  return result
-} */
