@@ -8,10 +8,24 @@ The input will be a lowercase string with no spaces.
 
 Good luck! 
 
+data working with: string, array
+param: string
+returns => array
+
+___pseudocode____
+create 2 empty strings for even and odd indexed alternating cases
+loop through the 's' param for both strings
+in the first loop check for the even indexes and make them uppercase
+otherwise leave the letters lowercase
+
+in the second loop check for the odd indexes and make them uppercase
+otherwise leave the letters in lowercase 
+
+return both strings wih  even/odd indexed alternated cases
 
 */
 
-function capitalize(s) { //declaring function capitalize expecting one argument
+const capitalize = s => { //declaring function capitalize expecting one argument
     let str = '' //declaring str as an empty string
     let altString = '' //declaring altString as an empty string
     for (let i = 0; i < s.length; i++) { //for loop iterating over length of argument
@@ -29,26 +43,29 @@ function capitalize(s) { //declaring function capitalize expecting one argument
         }
     } //end of for loop
     return [str, altString] //returns an array with str and altString
-};
+}
 
 // without comments
 
-/* const capitalize = s => {
-    let str = ''
-    let altString = ''
+/* const capitalize = s =>{
+  let str = ''
+  let altStr = ''
 
-    for (let i = 0; i < s.length; i++) {
-        if (i % 2 === 0) {
-            str += str[i].toUpperCase()
-        }
+  for(let i = 0; i < s.length; i++){
+    if(i % 2 === 0){
+      str += s[i].toUpperCase()
+    }else{
+      str += s[i]
     }
-    for (let i = 0 i < s.length; i++) {
-        if (i % 2 === 1) {
-            altString += str[i].toUpperCase()
-        } else {
-            altString += s[i]
-        }
+  }
+  for(i = 0; i < s.length; i++){
+    if(i % 2 === 1){
+      altStr += s[i].toUpperCase()
+    }else{
+      altStr += s[i]
     }
-    return [str, altString]
+  }
+     return [str, altStr]
+}
 }
 */
