@@ -27,14 +27,12 @@ pseudocode:
 
 const adjacentElementsProduct = array => {
   // empty array to store result
-  let newArr = []
+  let arr = []
   // loop though arr (with unknown length)
   for (i = 0; i < array.length - 1; i++) {
     // multiply all adjacent elements and push to newArr
-    newArr.push(array[i] * array[i + 1])
+    arr.push(array[i] * array[i + 1])
   }
   // return the largest product from newArr
-  return Math.max(...newArr)
+  return Math.max(...arr)
 }
-
-adjacentElementsProduct([1, 2, 3])

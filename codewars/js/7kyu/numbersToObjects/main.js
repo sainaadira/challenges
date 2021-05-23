@@ -28,3 +28,11 @@ const numObj = s => {
     }
   })
 }
+
+// without comments
+
+const numObj = s => {
+  return s.map(el => {
+    return { [el]: String.fromCharCode(el) }
+  })
+}

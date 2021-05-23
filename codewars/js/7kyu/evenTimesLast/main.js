@@ -28,7 +28,3 @@ const evenLast = numbers => {
   return sum * numbers[numbers.length - 1]
 }
 
-// using filter and reduce
-const evenLast = numbers => {
-  return numbers.filter((el, i) => i % 2 === 0).reduce((a, b) => a + b, 0) * numbers[numbers.length - 1] || 0
-}
