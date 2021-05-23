@@ -1,4 +1,5 @@
 /*
+https://www.codewars.com/kata/56414fdc6488ee99db00002c
 Your job is to figure out the index of which vowel is missing from a given string:
 
 A has an index of 0,
@@ -26,4 +27,9 @@ The includes() method determines whether an array includes a certain value among
 const absentVowel = x => {
   let vowels = ['a', 'e', 'i', 'o', 'u']
   return vowels.findIndex(vowel => !x.includes(vowel));
+}
+
+/* with spread operator */
+const absentVowel = x => {
+  return [...'aeiou'].findIndex(vowel => !x.includes(vowel))
 }

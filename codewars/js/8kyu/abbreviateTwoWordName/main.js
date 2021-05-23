@@ -29,9 +29,9 @@ const abbrevName = name => {
 
 /* shorter solution
 const abbrevName = name =>{
-  name.toUpperCase()
-  let arr = name.split(' ')
-  return `${arr[0][0].toUpperCase()}.${arr[1][0].toUpperCase()}`
+ let initials = name.split(' ')
+
+ return `${initials[0][0].toUpperCase()}.${initials[1][0].toUpperCase()}`
 }
 */
 

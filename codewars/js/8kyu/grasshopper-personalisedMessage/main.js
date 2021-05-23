@@ -15,7 +15,7 @@ const greet = (name, owner) => {
   return 'Hello guest';
 }
 
-//using tenary operators
+//using tenary operator
 const greet = (name, owner) => {
   return name == owner ? 'Hello Boss' : 'Hello guest'
 }

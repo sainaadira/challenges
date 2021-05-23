@@ -7,11 +7,12 @@ Consider an array/list of sheep where some sheep may be missing from their place
 
 
 
-function countSheeps(arrayOfSheep) {
+const countSheeps = (arrayOfSheep) => {
   let sheepCount = 0
-  for (let i = 0; i < arrayOfSheep.length; i++){
-   if (arrayOfSheep[i] == true ){
+  for (let i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] == true) {
       sheepCount++
-   }
-  } return sheepCount
+    }
+  }
+  return sheepCount
 }

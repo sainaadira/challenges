@@ -8,11 +8,25 @@ Given a year, return the century it is in.
 
 example:
 
+
+
+data working with: number (param)
+returns => number
+
+example:
 Input , Output Examples ::
 centuryFromYear(1705)  returns (18)
 centuryFromYear(1900)  returns (19)
 centuryFromYear(1601)  returns (17)
-centuryFromYear(2000)  returns (20) */
+centuryFromYear(2000)  returns (20)
+
+pseudocode___
+create a variable for century and give it a value of 0
+loop through year param and check if i divided by 100 with no remainder
+if so, increment century by 1
+return century
+
+*/
 
 
 const century = year => {

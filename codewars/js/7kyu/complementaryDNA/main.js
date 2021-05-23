@@ -12,6 +12,12 @@ example:
 DNAStrand ("ATTGC") // return "TAACG"
 
 DNAStrand ("GTAT") // return "CATA"
+
+pseudocode ___
+create an empty string store the  final DNA result
+loop though imputted dna string
+conditional changing conplementary strands A to T, T to A, C to G & G to C
+return the final result 
 */
 
 

@@ -7,7 +7,7 @@ In this Kata, you will remove the left-most duplicates from a list of integers a
 // followed by removing a 4 at index 1
 solve([3, 4, 4, 3, 6, 3]); // => [4, 6, 3]
 
-data working with: arrays
+data working with: arrays (param)
 returns => an arr with all unique values
 
 ___pseudocode___

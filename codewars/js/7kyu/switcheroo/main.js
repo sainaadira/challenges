@@ -1,5 +1,5 @@
 /*
-https://www.codewars.com/kata/57f759bb664021a30300007d/train/javascript
+r
 
 
 Given a string made up of letters a, b, and/or c, switch the position of letters a and b (change a to b and vice versa). Leave any incidence of c untouched.
@@ -20,13 +20,14 @@ example:
 
 const switcheroo = x => {
 
-  return x.split('').map((e) => {
-    if (e == 'b') {
+  return x.split('').map(el => {
+    if (el == 'b') {
       return 'a'
-    } else if (e == 'a') {
+    } else if (el == 'a') {
       return 'b'
-    } else if (e == 'c') {
+    } else if (el == 'c') {
       return 'c'
     }
-  }).join('')
+  })
+    .join('')
 }
