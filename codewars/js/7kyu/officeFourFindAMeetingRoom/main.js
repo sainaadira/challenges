@@ -28,4 +28,10 @@ const meeting = x => {
 }
 
 
+// with  ternary, includes() & indexOf()
+const meeting = x => {
+  return !x.includes('O') ? 'None available!' : x.indexOf('O')
+}
+
+
 
