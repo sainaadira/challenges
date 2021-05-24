@@ -8,7 +8,7 @@ Instead of copying the original, it reverses it: '1' becomes '0' and vice versa.
 Given a string of binary, return the version the photocopier gives you as a string.
 
 
-data working with: string (input) / array
+data working with: string (param)
 returns => string
 
 __pseudocode__
@@ -18,7 +18,7 @@ __pseudocode__
   find the index holding 1 and switch to 0
   find the index holding 0 and switch to 1]
 
-  map through the array and conditionally switch?
+  map through the array conditionally switch 1 to 0 & 0 to 1
   return to string using join('')
 */
 
@@ -26,11 +26,7 @@ __pseudocode__
 const broken = x => {
   let str = x.split('')
   return str.map(el => {
-    if (el === '0') {
-      return '1'
-    } else {
-      return '0'
-    }
+    return el === '0' ? '1' : '0'
   })
     .join('')
 }
