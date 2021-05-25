@@ -11,13 +11,15 @@ data working with: arrays (param)
 returns => an arr with all unique values
 
 ___pseudocode___
- go through arr and filter out the 1st el that is a duplicate
- method: filter(el, in, arr) 
- check for all elements with duplicates 
- method: lastIndexOf()
+filter through the array to return a new one that contains:
+an array with removed duplicates on the left side
+search from the end of the array with lastIndexOf()
+
  MDN:
- The lastIndexOf(param: searchEl) 
- lastIndexOf compares searchElement to elements of the Array using strict equality (the same method used by the ===, or triple-equals, operator)
+ The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+
+  method: filter(el, in, arr)
+ check for all elements with duplicates
 
 */
 
