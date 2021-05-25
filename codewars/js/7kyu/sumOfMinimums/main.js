@@ -1,4 +1,4 @@
-/* https://www.codewars.com/kata/5d5ee4c35162d9001af7d699/train/javascript
+/* l.
 
 Given a 2D array of size m * n. Your task is to find the sum of minimum value in each row.
 
@@ -24,4 +24,9 @@ const sumOfMinimums = arr => {
     // the spread operator is used to expand the the Math.min() method to the 2D array
 
   } return sum
+}
+
+// using reduce()
+function sumOfMinimums(arr) {
+  return arr.reduce((a, b) => a + Math.min(...b), 0)
 }

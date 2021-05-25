@@ -36,11 +36,10 @@ const DNAStrand = dna => {
         break;
       case 'G':
         dnaResult += 'C'
+        break;
     }
   }
-
   return dnaResult
-
 }
 
 
