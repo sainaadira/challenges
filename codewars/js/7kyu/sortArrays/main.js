@@ -6,6 +6,4 @@ Just a simple sorting usage. Create a function that returns the elements of the 
  */
 
 
-const sortMe = names => {
-  return names.sort()
-}
+const sortMe = names => names.sort()
