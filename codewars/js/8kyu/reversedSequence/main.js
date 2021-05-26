@@ -11,3 +11,10 @@ const reverseSeq = n => {
   }
   return arr
 }
+
+// using sort method
+const reverseSeq = n => {
+  return n.sort((b, a) => a - b)
+}
+reverseSeq([3, 2, 1])
+
