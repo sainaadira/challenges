@@ -24,8 +24,12 @@ else return name does not play banjo
 const areYouPlayingBanjo = name => {
   if (name.toLowerCase().charAt(0) === 'r') {
     return `${name} plays banjo`
-
   } else {
     return `${name} does not play banjo`
   }
+}
+
+// with ternary oprerator 
+const areYouPlayingBanjo = name => {
+  return name.toLowerCase().charAt(0) === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
 }
