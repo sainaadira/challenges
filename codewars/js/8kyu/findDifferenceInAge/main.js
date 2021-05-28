@@ -9,8 +9,8 @@ You will be given an array of all the family members' ages, in any order. The ag
 */
 
 const differenceInAges = ages => {
-  const minAge = Math.min(...ages);
-  const maxAge = Math.max(...ages);
+  let minAge = Math.min(...ages)
+  let maxAge = Math.max(...ages)
 
   return [minAge, maxAge, maxAge - minAge];
 }

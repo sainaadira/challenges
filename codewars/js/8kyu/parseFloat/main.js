@@ -1,4 +1,4 @@
-/* https://www.codewars.com/kata/57a386117cb1f31890000039/train/javascript
+/* p
 
 Write function parseF which takes an input and returns a number or null if conversion is not possible. The input can be one of many different types so be aware. */
 
@@ -10,4 +10,9 @@ const parseF = s => {
   else {
     return parseFloat(s) || null
   }
+}
+
+// with ternary 
+const parseF = (s) => {
+  return parseFloat(s) === 0 ? 0 : parseFloat(s) || null
 }

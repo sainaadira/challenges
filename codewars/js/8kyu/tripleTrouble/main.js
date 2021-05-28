@@ -15,10 +15,11 @@ example:
 Input: "aa", "bb" , "cc" => Output: "abcabc"
 
 ___pseudocode___
-create empty string to store input
-loop through first param
-use template literal for string interpolation adding variables 
-add them to string and return
+- create empty string to store input
+- loop through first param
+- use template literal for string interpolation adding variables and all
+     elements from the input
+- add them to string and return
 
 */
 

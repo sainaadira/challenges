@@ -12,32 +12,15 @@ Complete the function which returns the weekday according to the input number:
 7 returns "Saturday"
 Otherwise returns "Wrong, please enter a number between 1 and 7" */
 
-function whatday(num) {
-  switch (num) {
-    case 1:
-      return 'Sunday'
-      break;
-    case 2:
-      return 'Monday'
-      break;
-    case 3:
-      return 'Tuesday'
-      break;
-    case 4:
-      return 'Wednesday'
-      break;
-    case 5:
-      return 'Thursday'
-      break;
-    case 6:
-      return 'Friday'
-      break;
-    case 7:
-      return 'Sunday'
-      break;
-    default:
-      return 'Wrong, please enter a number between 1 and 7'
-
+const whatday = num => {
+  const days = {
+    1: 'Sunday',
+    2: 'Monday',
+    3: 'Tuesday',
+    4: 'Wednesday',
+    5: 'Thursday',
+    6: 'Friday',
+    7: 'Saturday'
   }
-
+  return days[num] || 'Wrong, please enter a number between 1 and 7'
 }

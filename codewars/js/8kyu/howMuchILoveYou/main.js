@@ -24,21 +24,34 @@ Test.describe("howMuchILoveYou",function() {
 })})
 */
 
-function howMuchILoveYou(nbPetals) {
-   let answer = nbPetals % 6;
-   switch (answer){
-      case 1:
-       return 'I love you';
-      case 2:
-        return  'a little';
-      case 3:
-        return 'a lot';
-      case 4:
-        return 'passionately';
-      case 5:
-        return 'madly';
-      default:
-        return 'not at all';
+const howMuchILoveYou = (nbPetals) => {
+  let phrase = {
+    0: "not at all",
+    1: "I love you",
+    2: "a little",
+    3: "a lot",
+    4: "passionately",
+    5: "madly"
+  }
+  return phrase[nbPetals % 6]
+}
 
-    }
+
+// with switch case
+const howMuchILoveYou = nbPetals => {
+  let answer = nbPetals % 6;
+  switch (answer) {
+    case 1:
+      return 'I love you';
+    case 2:
+      return 'a little';
+    case 3:
+      return 'a lot';
+    case 4:
+      return 'passionately';
+    case 5:
+      return 'madly';
+    default:
+      return 'not at all';
+  }
 }

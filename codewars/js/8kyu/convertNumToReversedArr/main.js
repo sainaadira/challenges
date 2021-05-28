@@ -28,3 +28,8 @@ const digitize = n => {
   }
   return arr
 }
+
+// using map method
+const digitize = n => {
+  return String(n).split('').map(Number).reverse()
+}
