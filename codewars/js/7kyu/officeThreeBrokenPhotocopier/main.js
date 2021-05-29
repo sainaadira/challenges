@@ -10,6 +10,9 @@ Given a string of binary, return the version the photocopier gives you as a stri
 
 data working with: string (param)
 returns => string
+example: 
+broken("100010"), "011101")
+broken("1"), "0")
 
 __pseudocode__
   split the string into an array using split('')
@@ -17,6 +20,7 @@ __pseudocode__
   [how do i?
   find the index holding 1 and switch to 0
   find the index holding 0 and switch to 1]
+
 
   map through the array conditionally switch 1 to 0 & 0 to 1
   return to string using join('')
@@ -29,4 +33,28 @@ const broken = x => {
     return el === '0' ? '1' : '0'
   })
     .join('')
+}
+
+//an almost one liner!
+const broken = x => {
+  let str = x.split('')
+  return str.map(el => el === '0' ? '1' : '0').join('')
+}
+
+
+// tried this solution again with a for loop
+const broken = (x) => {
+  let str = ''
+
+  for (let i = 0; i < x.length; i++) {
+    switch (x[i]) {
+      case '0':
+        str += '1'
+        break;
+      case '1':
+        str += '0'
+        break;
+    }
+  }
+  return str
 }

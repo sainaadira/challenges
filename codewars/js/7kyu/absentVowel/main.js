@@ -12,6 +12,10 @@ Notes: There is no need for string validation and every sentence given will cont
 data working with: array
 returns: number
 
+exampples:
+"John Doe hs seven red pples under his bsket"          =>  0  ; missing: "a"
+"Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
+
 ***** PSEUDO CODE ****
 1) store vowels into an array
 2) search for the index of which the vowel is missing with findIndex()
@@ -20,7 +24,7 @@ returns: number
 
 MDN SOURCES
 The findIndex() method returns the index of the first element in the array that satisfies the provided testing function
-The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+The includes() method determines whether an array includes a certain value among its entries, returrns boolean as appropriate.
 */
 
 
