@@ -20,7 +20,7 @@ const sumOfMinimums = arr => {
   // to grab the minimum number from each row.
   for (let i = 0; i < arr.length; i++) {
     sum += Math.min(...arr[i])
-    // using Math.min() to grab the minimum number from both arrays
+    // using Math.min() to grab the min number from both arrays
     // the spread operator is used to expand the the Math.min() method to the 2D array
 
   } return sum
