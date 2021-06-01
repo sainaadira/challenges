@@ -15,7 +15,7 @@ use reduce method to add the arraus and output one sum
 
 const arrayPlusArray = (arr1, arr2) => {
   let joinedArr = [...arr1, ...arr2]
-  return joinedArr.reduce((a, b) => a + b)
+  return joinedArr.reduce((a, b) => a + b, 0)
 }
 
 

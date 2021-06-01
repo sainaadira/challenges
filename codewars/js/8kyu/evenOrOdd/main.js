@@ -1,4 +1,3 @@
-
 // https://www.codewars.com/kata/even-or-odd/train/javascript
 
 // Create a function (or write a script in Shell) that takes 
