@@ -20,7 +20,8 @@ returns => array
 // refactored code with one for loop
 const capitalize = s => {
   const arr = s.split('')
-  let str = '', altStr = ''
+  let str = ''
+  let altStr = ''
 
   for (let i = 0; i < arr.length; i++) {
     // checks to see if the index is even and if so make the altStr uppercase and leave the first string index as is.
