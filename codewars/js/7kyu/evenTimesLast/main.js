@@ -7,8 +7,16 @@ Indices in sequence start from 0.
 
 If the sequence is empty, you should return 0.
 
-data working with: array
-returns: number
+
+P: array (of nums)
+R: number (even indexed sum * last index)
+E: [2,3,4,5] => 30
+P: conditionally check if sequence is empty
+   if yes, return 0
+   create variable to hold sum
+   traverse through arr find even indexes
+   sum even indexes to get result
+   mulitply sum by last index: numbers[numbers.length - 1]
 
  */
 
