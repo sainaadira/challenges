@@ -17,3 +17,8 @@ P: check for even number
 const evensAndOdds = num => {
   return num % 2 === 0 ? num.toString(2) : num.toString(16)
 }
+
+// sinplified
+const evensAndOdds = num => {
+  return num.toString(num % 2 ? 16 : 2)
+}
