@@ -29,17 +29,37 @@ const mountMoose = new Song('Mount Moose', 'The Snazzy Moose');
 // day 1
 mountMoose.howMany(['John', 'joHN', 'carl']); => 2
 
+P: class: string method: array
+R: number (how many new listeners the song gained)
+E: day one: howMany(['John', 'Fred', 'BOb', 'carl', 'RyAn']); => 5
+   day 2: (['JoHn', 'Luke', 'AmAndA']) only luke and and amanda counted b/c they're new
+P: create class and constructor (title and artist params)
+   create howMany method place array of people as param
+   iterate though people array, make names all lowercase
+   create variable for unique listeners
+   create variable for new listeners
+   filter though uniqueListeners array to check if a new listener is in the arr
+   iterate though newListeners arr and push listeners into array
+   return length of newListeners
 */
+
+
 
 class Song {
   constructor(title, artist) {
     this.title = title
     this.artist = artist
-    this.listener = new Set()
+    this.listenersArr = []
   }
-  howMany = (people) => {
-    let oldSize = this.listener.size
-    people.map(p => this.listener.add(p.toLowerCase()))
-    return this.listener.size - oldSize
+  howMany(listener) {
+    people = people.map(person => person.toLowerCase())
+    // all values in a set are unique
+    const uniqueListener = [...new Set(listener)]
+    // new listener filters though uniqueListener arr and check arr does not include an already listed lisener
+    const newListener = uniqueListener.filter(listener => !this.listenersArr.includes(listener))
+    // pushes new listener into listenersArr
+    newListener.forEach(listener => this.listenersArr.push(listener))
+    // returns number of newListeners
+    return newListener.length
   }
 }
