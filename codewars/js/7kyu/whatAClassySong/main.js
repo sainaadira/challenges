@@ -51,10 +51,10 @@ class Song {
     this.artist = artist
     this.listenersArr = []
   }
-  howMany(listener) {
+  howMany(people) {
     people = people.map(person => person.toLowerCase())
     // all values in a set are unique
-    const uniqueListener = [...new Set(listener)]
+    const uniqueListener = [...new Set(people)]
     // new listener filters though uniqueListener arr and check arr does not include an already listed lisener
     const newListener = uniqueListener.filter(listener => !this.listenersArr.includes(listener))
     // pushes new listener into listenersArr
