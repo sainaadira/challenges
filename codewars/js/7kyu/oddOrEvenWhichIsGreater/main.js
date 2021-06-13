@@ -9,7 +9,7 @@ If the sum of odd numbers is greater than the sum of even numbers return: "Odd i
 If the total of both even and odd numbers are identical return: "Even and Odd are the same"
 
 
-P: string of nums
+P: string of numbers
 R: string => if even > odd  'even is greater than odd'
              if odd > even 'odd is greater than even'
             if total of even and odd are same 'even and odd are the same'
