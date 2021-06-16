@@ -21,3 +21,9 @@ P: i dont know the input number
 const largest = (n, arr) => {
   return arr.sort((b, a) => a - b).slice(0, n).reverse()
 }
+
+// refactored
+
+function largest(n, arr) {
+  return arr.sort((a, b) => a - b).slice(arr.length - n)
+}
