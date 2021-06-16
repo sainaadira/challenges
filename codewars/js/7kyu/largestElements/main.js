@@ -23,6 +23,11 @@ const largest = (n, arr) => {
 }
 
 // refactored
+/*
+sort all elements in ascending order
+extract largest elements from the length of the array 
+minus the number given in input
+*/
 
 function largest(n, arr) {
   return arr.sort((a, b) => a - b).slice(arr.length - n)
