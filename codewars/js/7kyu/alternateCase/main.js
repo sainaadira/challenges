@@ -11,10 +11,9 @@ P: split string into an array
    letter is lowercase => uppercase
    letter is uppercase => lowercase
    maybe iterate with map() to return a new array
-  join string together
+  join string back together
      
  */
-
 
 const alternateCase = s => {
   let word = s.split('')
