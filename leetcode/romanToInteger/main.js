@@ -39,6 +39,8 @@ P: if # on the right is greater than # on left (subtact) IV (5)
   - result then equals current number
   - return result
 
+  example: MCMXCIV = 1994
+
  */
 
 const romanToInt = s => {
@@ -55,28 +57,24 @@ const romanToInt = s => {
     D: 500,
     M: 1000
   }
-  // for loop to check all chars in roman numeral
   for (let i = 0; i < s.length; i++) {
-    // gets first current character pass through roman map and gives integer it corresponds to
-    let currentInteger = roman[s.charAt(i)]
-    // gets next character pass through roman map and gives integer it corresponds to
-    let nextInteger = roman[s.charAt(i + 1)]
-    // checking to enure there is a next integer
-    if (nextInteger) {
-      // if current number is >= next ingeger
-      if (currentInteger >= nextInteger) {
-        // add current to the total result
-        result += currentInteger
-        // otherwise, total is equal to next - current integer
+    let currentInt = roman[s.charAt(i)]
+    let nextInt = roman[s.charAt(i + 1)]
+
+    // if there is a nextInt to compare, do the steps below
+    if (nextInt) {
+      // checks if the current interger is >= next integer. if so, add to total
+      if (currentInt >= nextInt) {
+        result += currentInt
+        //otherwise if next is greater than current, add total value for both roman numerals by subtracting M from C (1000 - 100 = 900)
       } else {
-        result += (nextInteger - currentInteger)
-        // iterate by 1 to get the next set of roman numerals to compare
+        result += (nextInt - currentInt)
+        // since i've accounted for M & C i need to move onto next set by incrementing by one
         i++
       }
-      // othwewise result equals current integer
+      // if there is no nextInt to compare to, add currentInt to total
     } else {
-
-      result += currentInteger
+      result += currentInt
     }
   }
   return result
