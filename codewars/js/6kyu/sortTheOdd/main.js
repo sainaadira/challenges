@@ -15,10 +15,10 @@ P: filter out odd numbers array in array
    map through rest of array 
    conditionally check for even numbers
    if they are even, take odd array and move them to beginning
-    return arr
+    return the arr
  */
 
 const sortArray = array => {
-  const odd = array.filter(el => el % 2 === 1).sort((a, b) => a - b)
-  return array.map(el => el % 2 ? odd.shift() : el)
+   const odd = array.filter(el => el % 2 === 1).sort((a, b) => a - b)
+   return array.map(el => el % 2 ? odd.shift() : el)
 }
