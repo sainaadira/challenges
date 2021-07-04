@@ -12,7 +12,7 @@ P: create empty arr to push reult into
    square all numbers in array Math.pow() or ** 2
    push into array
    return arr 
-   sum all numbers with reduce
+   sum all numbers with reduce()
   
 */
 
