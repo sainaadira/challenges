@@ -16,7 +16,7 @@ P: -create empty string to hold result
    - if so, add a space to the new string
      followed by the letter
    - otherwise just add the letter to the string
-   - return the result
+   - return result
  */
 
 
