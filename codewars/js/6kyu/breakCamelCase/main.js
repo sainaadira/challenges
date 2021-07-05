@@ -11,12 +11,12 @@ P: string (in camel case)
 R: string camel cased separated
 E: 'helloWorld' => 'hello World'
 P: -create empty string to hold result
-   -loop through the str with for..of
+   -loop through the str with for..of 
    - check if there is an uppercased letter
    - if so, add a space to the new string
      followed by the letter
    - otherwise just add the letter to the string
-   - return result
+   - return the result
  */
 
 
