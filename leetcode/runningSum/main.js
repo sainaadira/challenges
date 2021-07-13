@@ -15,6 +15,7 @@ P: create empty arr to store result
    return array
  */
 
+// o(n) is faster
 const runningSum = nums => {
   let arr = []
   let sum = 0
