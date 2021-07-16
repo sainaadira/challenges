@@ -32,21 +32,18 @@ P: create empy object to create count of numbers in array
 
 */
 
-
 const singleNumber = nums => {
-  let numMap = {}
-  // loops through array
+  let numberMap = {}
+
   for (number of nums) {
-    if (!numMap[number]) {
-      numMap[number] = 1
+    if (!numberMap[number]) {
+      numberMap[number] = 1
     } else {
-      numMap[number]++
+      numberMap[number]++
     }
   }
-  // loops through object
-  for (number in numMap) {
-    if (numMap[number] === 1) {
+  for (number in numberMap) {
+    if (numberMap[number] === 1)
       return number
-    }
   }
 }
