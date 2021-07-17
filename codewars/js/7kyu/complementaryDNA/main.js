@@ -43,3 +43,16 @@ const DNAStrand = dna => {
 }
 
 
+
+// another solution using an obj
+
+const dnaStrand = dna => {
+  let dnaObj = {
+    A: 'T',
+    T: 'A',
+    C: 'G',
+    G: 'C'
+  }
+  return dna.split('').map(strand => dnaObj[strand]).join('')
+}
+
