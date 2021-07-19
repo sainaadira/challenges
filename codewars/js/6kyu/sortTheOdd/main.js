@@ -19,6 +19,6 @@ P: filter out odd numbers array in array
  */
 
 const sortArray = array => {
-   const odd = array.filter(el => el % 2 === 1).sort((a, b) => a - b)
+   const odd = array.filter(el => el % 2 !== 0).sort((a, b) => a - b)
    return array.map(el => el % 2 ? odd.shift() : el)
 }
