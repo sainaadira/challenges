@@ -27,10 +27,10 @@ pseudocode:
  */
 
 const alphabetPosition = text => {
-  let result = []
   let charArr = text.toLowerCase().split('')
+  let result = []
 
-  let alphabetObj = {
+  let alphabetObject = {
     'a': 1,
     'b': 2,
     'c': 3,
@@ -44,7 +44,7 @@ const alphabetPosition = text => {
     'k': 11,
     'l': 12,
     'm': 13,
-    'n': 14,
+    'm': 14,
     'o': 15,
     'p': 16,
     'q': 17,
@@ -60,13 +60,9 @@ const alphabetPosition = text => {
   }
 
   for (let i = 0; i < charArr.length; i++) {
-    if (alphabetObj.hasOwnProperty(charArr[i])) {
-      result.push(alphabetObj[charArr[i]])
+    if (alphabetObject.hasOwnProperty(charArr[i])) {
+      result.push(alphabetObject[charArr[i]])
     }
   }
   return result.join(' ')
 }
-
-
-var sentence = `The sunset sets at twelve o' clock.`
-console.log(alphabetPosition(sentence))
