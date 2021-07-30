@@ -13,17 +13,14 @@ Input sequence contains minimum two elements and every element is an integer.
 P: array of numbers
 R: number => with sum of largest numbers
 E: [1,2,3] => 6
-P: create variable to hold the sums of largest + second largest numbers
-   find largest numbers in array (look up how)
-   found it! numbers.sort((a, b) => a - b)[0]
-             numbers.sort((a, b) => a - b)[1]
-   add their values
-   return string
+P: sort the numbers in desending order
+   largest comes first, 2nd will follow
+   add the two values
+   return sum
 */
 
 
-const largestPairSum = numbers => {
-  let first = numbers.sort((a, b) => b - a)[0]
-  let second = numbers.sort((a, b) => b - a)[1]
-  return first + second
+const largestPairSum = nums => {
+  nums.sort((a, b) => b - a)
+  return nums[0] + nums[1]
 }
