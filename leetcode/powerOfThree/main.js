@@ -39,3 +39,12 @@ i was confused on Math.pow(3,33) instead of (n ** 3)
 but i learned about Number.Max_safe_integer - constant represents the maxiumum safe integer in js
 it has to be bigger than n or % wont be guaranteed to work.
  */
+
+// another solution similar to power of 2
+const isPowerOfThree = n => {
+  if (n === 0) return false
+  while (n % 3 === 0) {
+    n /= 3
+  }
+  return n === 1
+}
