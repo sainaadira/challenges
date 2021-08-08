@@ -9,10 +9,8 @@ P: create an empty array to hold result
    loop through string input
    push input string into array using charCodeAt()
    use toString() method to turn into a string pass in 2 as radix
-   return the arry
+   return the array
    
-
-
  */
 
 const wordToBin = str => {
