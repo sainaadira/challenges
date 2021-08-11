@@ -26,7 +26,7 @@ P: name the vowels in a string
 */
 
 const swapVowelCase = str => {
-  const swapCase = l => l.toLowerCase() ? l.toUpperCase() : l.toLowerCase()
+   const swapCase = letter => letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase()
 
-  return str.split('').map(el => 'aeiouAEIOU'.includes(el) ? swapCase(el) : el).join('')
+   return str.split('').map(el => 'aeiouAEIOU'.includes(el) ? swapCase(el) : el).join('')
 }
