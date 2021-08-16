@@ -13,7 +13,7 @@ E: input = [
   
 P: create empty array for result
    loop through array (for loop)
-   multiply elements in array
+   multiply elements in array ( reduce() )
    push into result array
    to find smallest product, Math.min()
    pass in the result
@@ -28,4 +28,15 @@ const smallestProduct = arr => {
     result.push(arr[i].reduce((a, b) => a * b))
   }
   return Math.min(...result)
+}
+
+/*
+ to grab the minimum total, use Math.min()
+ pass in the input array
+ iterate through array using - map()
+ to grab total product, use reduce()
+ return array
+ */
+const smallestProduct = arr => {
+  return Math.min(...arr.map(el => el.reduce((a, b) => a * b)))
 }
