@@ -27,12 +27,6 @@ The findIndex() method returns the index of the first element in the array that 
 The includes() method determines whether an array includes a certain value among its entries, returrns boolean as appropriate.
 */
 
-
-const absentVowel = x => {
-  let vowels = ['a', 'e', 'i', 'o', 'u']
-  return vowels.findIndex(vowel => !x.includes(vowel));
-}
-
 /* with spread operator */
 const absentVowel = x => {
   return [...'aeiou'].findIndex(vowel => !x.includes(vowel))
