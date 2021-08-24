@@ -16,7 +16,6 @@ return => array
 */
 
 const appendArrays = (arr1, arr2) => {
-  // joining arrays using spread syntax
   let joinedArr = [...arr1, ...arr2]
   return joinedArr
 }
