@@ -22,9 +22,8 @@ P: conditionally check if sequence is empty
 
 const evenLast = numbers => {
   // if the sequence is empty return 0
-  if (numbers.length === 0) {
-    return 0
-  }
+  if (numbers.length === 0) return 0
+
   //starting sum off with no value
   let sum = 0
   // loop through number sequence evenly
