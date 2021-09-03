@@ -18,22 +18,21 @@ Output: "even"
 data working with: array
 returns: string
 
-*/
+/*
+P: array of numbers
+R: string: odd or even
+E: oddOrEven([0]), 'even'
+   oddOrEven([1]), 'odd'
+P: create variable to to store sum
+   sum all elements in array
+  check for i % 2 === 0 if so, 'even'
+  otherwise its: 'odd'
 
-const oddOrEven = array => {
-  // adding all the values in the array with an initial value of 0
-  let sum = array.reduce((a, b) => a + b, 0)
-  //conditional to check if sum  is equal to 0 => even
-  // or if the sum is divisible by 2 with no remainder => even
-  // otherwise return odd
-  if (sum === 0) {
-    return 'even'
-  } else if (sum % 2 === 0) {
-    return 'even'
-  } else {
-    return 'odd'
-  }
-}
+  edge case:
+  if empty array [0] = > even
+  neg/ pos does not matter
+
+*/
 
 // with ternary operator
 const oddOrEven = array => {
