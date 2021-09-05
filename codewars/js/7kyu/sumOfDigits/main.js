@@ -16,8 +16,6 @@ P: check if string is empty, if so return empty string
    call reduce to grab total 
    create string to add + between each number
    return sum
-  
-
 */
 
 const sum = digits => {
