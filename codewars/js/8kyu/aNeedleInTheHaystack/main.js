@@ -15,8 +15,6 @@ should return "found the needle at position 5"
 data working with: array
 returns: string with index postion of needle
 
-
-
 __pseudocode__
 turn the word needle into a string
 use indexOf() method to find postion of needle on the haystack array
