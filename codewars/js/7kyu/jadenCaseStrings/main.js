@@ -8,13 +8,27 @@ Your task is to convert strings to how they would be written by Jaden Smith. The
 P: string
 R: string with every first letter uppercased
 E: "How can mirrors be real if our eyes aren't real" =>  "How Can Mirrors Be Real If Our Eyes Aren't Real"
-P: split the string into an array
-   map through the array and grab the first letter of every word using charAt() and make uppercase and slice at first index to leave the rest of the letters lowercase
-   join the array back into a string
-   return array
+P: create empty string to hold result
+   split my word into an array of words
+   loop through sentence array 
+   concatenate result to = all first letters of word capitalized and rest of letters stay as they are
+   return result and remove extra space using trim
 
 */
 
 String.prototype.toJadenCase = function () {
-  return this.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
-};
+  let result = ''
+  const sentence = String(this).split(' ')
+
+  for (let i = 0; i < sentence.length; i++) {
+    result += sentence[i].charAt(0).toUpperCase() + sentence[i].slice(1) + ' '
+  }
+  return result.trim()
+}
+
+
+//
+
+String.prototype.toJadenCase = function () {
+  return String(this).split(' ').map(el => el.charAt(0).toUpperCase() + el.slice(1)).join(' ')
+}
