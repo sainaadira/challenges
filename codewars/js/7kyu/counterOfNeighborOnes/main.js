@@ -13,13 +13,19 @@ R: [counting continusous 1 only] if there are no 1s return []
 E: [1, 1, 1, 0, 1] -> [3,1]
 P: initalize counter and index at 0
    - counter to count number of times 1 appears
-   - index to hold _____
+   - index to keep track of result array
    intalize empty array to hold result
+   
    loop through my input array
-   check if 1s appear continously (how?) 
-    -- check for 1s and 0s coditionally
-    
+   check if 1s appear continously 
+    -- conditionally check if 0s exist
+    if so, leave the count at 0
+    set the index to equal what's inside result array
+
+    -- condtionally check if 1s exist
    if so, add to the count
+   set the index of result array to equal counter
+
    return the new array
 
  */
