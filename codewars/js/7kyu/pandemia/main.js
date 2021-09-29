@@ -60,8 +60,6 @@ const infected = s => {
       infectedPopulation += map1[i].length
     }
   }
-  if (totalPopulation === 0) {
-    return 0
-  }
+  if (totalPopulation === 0) return 0
   return 100 * infectedPopulation / totalPopulation
 }
