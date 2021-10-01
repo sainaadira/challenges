@@ -17,6 +17,11 @@ const billboard = (name, price = 30) => {
   return name.split('').reduce(sum => sum + price, 0)
 }
 
+// shorthand using spread operator
+const billboard = (name, price = 30) => {
+  return [...name].reduce(sum => sum + price)
+}
+
 // O(n)
 const billboard = (name, price = 30) => {
   let cost = 0
