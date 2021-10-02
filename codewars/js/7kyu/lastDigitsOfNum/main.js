@@ -1,4 +1,5 @@
 /* https://www.codewars.com/kata/5cd5ba1ce4471a00256930c0/train/javascript
+
 Your job is to implement a function which returns the last D digits of an integer N as a list.
 
 Special cases:
