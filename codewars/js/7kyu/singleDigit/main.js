@@ -39,16 +39,19 @@ let converted = [...toBinary(n)].map(el => Number(el))
 */
 
 
-const numToBinary = num => num.toString(2)
+// convert number to binary string
+const numToBinary = n => n.toString(2)
 
-const numToDigits = num => String(num).split('').map(el => Number(el))
+// convert string to num
+const binaryToNum = n => String(n).split('').map(el => Number(el))
 
-const sumBinaryDigits = num => numToDigits(num).reduce((acc, cv) => acc + cv, 0)
+// get the sum of those numbers
+const getSum = n => binaryToNum(n).reduce((acc, cv) => acc + cv, 0)
 
-const singleDigit = num => {
-
-  while (num > 9) {
-    num = sumBinaryDigits(numToBinary(n))
+const singleDigit = n => {
+  //continue the process to reduce while n is greater than 9
+  while (n > 9) {
+    n = getSum(numToBinary(n))
   }
-  return num
+  return n
 }
