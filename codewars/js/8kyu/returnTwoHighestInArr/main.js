@@ -15,7 +15,7 @@ R: [highest, lowest] (value)
 E: [4, 10, 10, 9]  =>  [10, 9]
 P: copy the array using new Set()
    sort the array in desencing order (b - a)
-   use slice to get the first two elements and return a new arr
+   use slice to get the first two elements and return a new array
 */
 
 const twoHighest = arr => [...new Set(arr)].sort((a, b) => b - a).slice(0, 2)
