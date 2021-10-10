@@ -23,7 +23,7 @@ p: string with symbols and numbers
 r: string that contains only A-Z, a-z
 e: '.tree1' => 'tree'
 p: 
-   split the string into an array
+   split the string into an array of words
    filter through string
    check if the string is empty or 
    check if lowercase string does not equal to uppercase string
