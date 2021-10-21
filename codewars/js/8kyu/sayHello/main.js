@@ -7,6 +7,5 @@ Example output:
 Hello, Mr. Spock */
 
 
-const sayHello = (name) => {
-  return `Hello, ${name}`
-}
+const sayHello = (name) => `Hello, ${name}`
+
