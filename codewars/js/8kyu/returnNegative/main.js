@@ -22,10 +22,7 @@ function makeNegative(num) {
 
 //OR
 
+const makeNegative = num => -Math.abs(num)
 
-
-const makeNegative = num => {
-  return -Math.abs(num)
-}
 
 
