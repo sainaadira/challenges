@@ -7,9 +7,3 @@ The order of the sequence has to stay the same.
 
 
 const distinct = arr => [... new Set(arr)]
-
-// using  hash map
-const distinct = arr => {
-  let map = {}
-  return arr.filter(el => map.hasOwnProperty(el) ? false : (map[el] = true))
-}
