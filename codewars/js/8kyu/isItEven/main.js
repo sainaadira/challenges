@@ -7,6 +7,4 @@ Numbers may be positive or negative, integers or floats.
 Floats are considered UNeven for this kata. */
 
 
-const testEven = n => {
-    return n % 2 === 0
-}
+const testEven = n => n % 2 === 0
