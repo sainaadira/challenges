@@ -23,6 +23,5 @@ const howManyLightsabersDoYouOwn = name => {
 }
 
 // with ternary operator
-const howManyLightsabersDoYouOwn = name => {
-  return name === 'Zach' ? 18 : 0
-}
+const howManyLightsabersDoYouOwn = name => name === 'Zach' ? 18 : 0
+
