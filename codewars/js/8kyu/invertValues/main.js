@@ -23,6 +23,5 @@ const invert = array => {
 
 
 // using map()
-const invert = array => {
-  return array.map(num => -num)
-}
+const invert = array => array.map(num => -num)
+
