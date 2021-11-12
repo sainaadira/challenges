@@ -15,6 +15,4 @@ P:  map through arr 2 to return a new array
 
 */
 
-const stringMatchup = (arr1, arr2) => {
-  return arr2.map(a => arr1.filter(b => a === b).length)
-}
+const stringMatchup = (arr1, arr2) => arr2.map(a => arr1.filter(b => a === b).length)

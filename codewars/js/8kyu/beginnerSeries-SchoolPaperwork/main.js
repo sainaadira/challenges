@@ -20,7 +20,6 @@ const paperwork = (n, m) => {
 
 
 // with ternary operator
-const paperwork = (n, m) => {
-  return m < 0 || n < 0 ? 0 : m * n
-}
+const paperwork = (n, m) => m < 0 || n < 0 ? 0 : m * n
+
 

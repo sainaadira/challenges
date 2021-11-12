@@ -23,6 +23,4 @@ vaporcode('Let\'s go to the movies')
 
 
 // code that works solves all codewars test cases
-const vaporcode = (string) => {
-  return string.toUpperCase().split(' ').join('').split('').join('  ')
-}
+const vaporcode = (string) => string.toUpperCase().split(' ').join('').split('').join('  ')

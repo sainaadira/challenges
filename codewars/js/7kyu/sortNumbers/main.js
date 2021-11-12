@@ -15,6 +15,4 @@ P: make sure nums is not null or empty, if so.. return empty array
 
 */
 
-const solution = nums => {
-  return (nums || []).sort((a, b) => a - b, 0)
-}
+const solution = nums => (nums || []).sort((a, b) => a - b, 0)

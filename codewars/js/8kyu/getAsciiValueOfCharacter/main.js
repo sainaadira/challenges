@@ -16,6 +16,5 @@ const getASCII = c => {
 
 // without storing into variable
 
-const getASCII = c => {
-  return c.charCodeAt()
-}
+const getASCII = c => c.charCodeAt()
+

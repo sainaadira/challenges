@@ -17,6 +17,5 @@ using built in Number method to convert string to number
 
 */
 
-const stringToNumber = str => {
-  return Number(str)
-}
+const stringToNumber = str => Number(str)
+

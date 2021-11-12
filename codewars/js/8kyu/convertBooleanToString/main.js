@@ -13,6 +13,5 @@ For this kata, don't worry about edge cases like where unexpected input is passe
 
 
 
-const booleanToString = b => {
-  return String(b)
-}
+const booleanToString = b => String(b)
+

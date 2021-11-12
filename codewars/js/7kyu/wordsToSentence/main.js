@@ -18,6 +18,4 @@ const wordsToSentence = words => words.join(' ')
 
 // this can also be done with reduce
 
-const wordsToSentence2 = words => {
-  return words.reduce((prev, acc) => prev + ' ' + acc)
-}
+const wordsToSentence2 = words => words.reduce((prev, acc) => prev + ' ' + acc)

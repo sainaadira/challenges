@@ -8,6 +8,5 @@ Good luck :)*/
 
 
 
-const unusualFive = () => {
-  return 'hello'.length
-}
+const unusualFive = () => 'hello'.length
+

@@ -7,6 +7,5 @@ get_char(65) # => 'A' */
 
 
 
-const getChar = c => {
-  return String.fromCharCode(c)
-}
+const getChar = c => String.fromCharCode(c)
+

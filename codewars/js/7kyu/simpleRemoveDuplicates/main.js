@@ -24,6 +24,4 @@ search from the end of the array with lastIndexOf()
 */
 
 
-const solve = arr => {
-  return arr.filter((el, index, arr) => arr.lastIndexOf(el) === index)
-}
+const solve = arr => arr.filter((el, index, arr) => arr.lastIndexOf(el) === index)

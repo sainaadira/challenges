@@ -17,3 +17,6 @@ const arrayPlusArray = (arr1, arr2) => {
   let joinedArr = [...arr1, ...arr2]
   return joinedArr.reduce((a, b) => a + b, 0)
 }
+
+// reduced to a single line
+const arrayPlusArray = (arr1, arr2) => [...arr1, ...arr2].reduce((a, b) => a + b, 0)

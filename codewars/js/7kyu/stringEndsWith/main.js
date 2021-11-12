@@ -15,6 +15,4 @@ P: use endsWith() method to check if the input string ends with the ending strin
 endsWith returns a boolean
 */
 
-const solution = (str, ending) => {
-  return str.endsWith(ending)
-}
+const solution = (str, ending) => str.endsWith(ending)

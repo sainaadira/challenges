@@ -10,7 +10,4 @@ Given a string of digits, you should replace any digit below 5 with '0' and any 
  */
 
 
-const fakeBin = x => {
-  let nums = x.split('')
-  return nums.map(el => el < 5 ? 0 : 1).join('')
-}
+const fakeBin = x => x.split('').map(el => el < 5 ? 0 : 1).join('')

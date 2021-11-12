@@ -42,6 +42,5 @@ const century = year => {
 
 OR
 
-const century = year => {
-  return Math.ceil(year / 100); // math.ceil to round up to nearest century (100)
-}
+const century = year => Math.ceil(year / 100); // math.ceil to round up to nearest century (100)
+
