@@ -9,16 +9,6 @@ Write a program where Alex can input (n) how many times the hoop goes round and 
 -If he doesn't get 10 hoops, return the string "Keep at it until you get it". */
 
 
-
-const hoopCount = n => {
-  if (n >= 10) {
-    return 'Great, now move onto tricks'
-  } else {
-    return 'Keep at it until you get it'
-  }
-}
-
-// with ternary operator
 const hoopCount = n => n >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it'
 
 
