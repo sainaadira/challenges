@@ -21,11 +21,4 @@ p: return a function and pass in number as a param
 
  */
 
-function add(n) {
-  return function (num) {
-    return num + n
-  }
-}
-
-// shorthand
 const add = n => num => num + n
