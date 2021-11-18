@@ -15,9 +15,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitw
 read about the XOR operator to get a better understanding of this solution.
  */
 
-const findOdd = arr => {
-  return arr.reduce((a, b) => a ^ b, 0)
-}
+const findOdd = arr => arr.reduce((a, b) => a ^ b, 0)
+
 
 
 
