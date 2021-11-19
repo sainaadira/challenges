@@ -28,6 +28,4 @@ The includes() method determines whether an array includes a certain value among
 */
 
 /* with spread operator */
-const absentVowel = x => {
-  return [...'aeiou'].findIndex(vowel => !x.includes(vowel))
-}
+const absentVowel = x => [...'aeiou'].findIndex(vowel => !x.includes(vowel))
