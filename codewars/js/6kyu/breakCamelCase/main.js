@@ -34,8 +34,3 @@ const breakCamelCase = string => {
   return result
 }
 breakCamelCase('goodbyeWorld') // returns 'goodbye World'
-
-
-const breakCamelCase = str => {
-  return str.split("").map(letter => letter === letter.toUpperCase() ? " " + letter : letter).join("");
-}
