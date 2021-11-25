@@ -18,9 +18,8 @@ P: i dont know the input number
 
 */
 
-const largest = (n, arr) => {
-  return arr.sort((b, a) => a - b).slice(0, n).reverse()
-}
+const largest = (n, arr) => arr.sort((b, a) => a - b).slice(0, n).reverse()
+
 
 // refactored
 /*
