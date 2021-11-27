@@ -8,13 +8,5 @@ The charCodeAt() method returns an integer between 0 and 65535 representing the 
 
 */
 
-
-const getASCII = c => {
-  let value = c.charCodeAt()
-  return value
-}
-
-// without storing into variable
-
 const getASCII = c => c.charCodeAt()
 
