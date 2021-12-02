@@ -34,9 +34,8 @@ sumArray([6, 2, 1, 8, 10]) // 16
 // sum all numbers in array
 // subtract the max value Math.max(...array)
 // subtract min value Math.min(...array)
-function sumArray(array) {
-  return array.reduce((a, b) => a + b) - Math.max(...array) - Math.min(...array)
-}
+const sumArray = array => array.reduce((a, b) => a + b) - Math.max(...array) - Math.min(...array)
+
 
 
 // works for codewars
@@ -59,8 +58,7 @@ const sumArray = arr => (
 
 
 // one liner
-const sumArray = array => {
-  return array ? array.sort((a, b) => a - b).slice(1, -1).reduce((a, c) => a + c, 0) : 0
-}
+const sumArray = array => array ? array.sort((a, b) => a - b).slice(1, -1).reduce((a, c) => a + c, 0) : 0
+
 
 
