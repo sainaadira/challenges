@@ -15,7 +15,4 @@ P: split string into an array
      
  */
 
-const alternateCase = s => {
-  let word = s.split('')
-  return word.map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('')
-}
+const alternateCase = s => s.split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('')
