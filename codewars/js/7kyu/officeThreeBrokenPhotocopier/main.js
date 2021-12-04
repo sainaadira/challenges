@@ -35,11 +35,9 @@ const broken = x => {
     .join('')
 }
 
-//an almost one liner!
-const broken = x => {
-  let str = x.split('')
-  return str.map(el => el === '0' ? '1' : '0').join('')
-}
+//a one liner!
+const broken = x => x.split('').map(el => el === '0' ? '1' : '0').join('')
+
 
 
 // tried this solution again with a for loop
