@@ -30,6 +30,4 @@ const digitize = n => {
 }
 
 // using map method
-const digitize = n => {
-  return String(n).split('').map(Number).reverse()
-}
+const digitize = n => String(n).split('').map(Number).reverse()
