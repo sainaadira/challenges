@@ -13,5 +13,4 @@ Example:
 sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')
 */
 
-
 const sayHello = (name, city, state) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
