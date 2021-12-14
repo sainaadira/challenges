@@ -13,7 +13,6 @@ P: create empty arr to push reult into
    push into array
    return arr 
    sum all numbers with reduce()
-  
 */
 
 const squareSum = numbers => {
