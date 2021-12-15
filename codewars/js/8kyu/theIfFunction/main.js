@@ -10,4 +10,4 @@ _if(true, function(){console.log("True")}, function(){console.log("false")})
 // Logs 'True' to the console.
  */
 
-const _if = (bool, func1, func2) => (bool === true) ? func1() : func2()
+const _if = (bool, func1, func2) => (bool == true) ? func1() : func2()
