@@ -13,7 +13,6 @@ E: 'Yes' => 'Yes?'  || 'No'  => 'No?'
 P: check to see if the string already contains a question mark
    if it does, return original string
    if not, concatenate a question mark to the end of string
-
 */
 
 const ensureQuestions = s => {
@@ -21,5 +20,5 @@ const ensureQuestions = s => {
   return `${s}?`
 }
 
-// one liner
+// a one liner
 const ensureQuestions = s => s.endsWith('?') ? s : `${s}?`
