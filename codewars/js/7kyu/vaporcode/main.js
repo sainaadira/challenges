@@ -14,13 +14,5 @@ Pseudocode:
  */
 
 
-// this code works but it does not solve for special characters
-const vaporcode = string => {
-  return string.toUpperCase().split('').join('  ')
-}
-
-vaporcode('Let\'s go to the movies')
-
-
 // code that works solves all codewars test cases
 const vaporcode = (string) => string.toUpperCase().split(' ').join('').split('').join('  ')
