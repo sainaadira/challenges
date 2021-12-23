@@ -20,8 +20,6 @@ P: grab length of both a and b
   otherwise return b + reverseFunction(a) + b
 
 */
-
-
 // b should be original long string  a + reverse(b) + a
 // if a === b, a is longer => b + reverse(a) + b
 const shorter_reverse_longer = (a, b) => {
