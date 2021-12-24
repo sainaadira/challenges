@@ -36,8 +36,7 @@ const evenChars = string => {
 
 /*
 second attempt with filter
-execute condtional first to check if string.length is less than 2 or greater than 100
-then filter though string and check if the index is even
+execute condtional first to check if string.length is less than 2 or greater than 100 then filter though string and check if the index is even
 */
 
 const evenChars = string => {
