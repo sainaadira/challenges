@@ -17,15 +17,11 @@ read about the XOR operator to get a better understanding of this solution.
 
 const findOdd = arr => arr.reduce((a, b) => a ^ b, 0)
 
-
-
-
 // using O(n)
 // loop through array
 // filter through the array and check for the number of times odd number appears in array (using length)
 // if odd appears, return that element
 // otherwise return 0
-
 
 const findOdd = arr => {
   for (let i = 0; i < arr.length; i++) {
