@@ -10,12 +10,10 @@ R: 'string'
 E: ["hello", "world"] -> "hello world"
 P: because i have an array, i can join the array into a string.
  - wasn't sure how to remove the comma but it gets removed in the join method
-
  */
 
 const wordsToSentence = words => words.join(' ')
 
 
 // this can also be done with reduce
-
 const wordsToSentence2 = words => words.reduce((prev, acc) => prev + ' ' + acc)
