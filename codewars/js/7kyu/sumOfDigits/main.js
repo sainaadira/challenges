@@ -6,7 +6,6 @@ Digits can be a number or a string, and you should control it is no undefined an
 
 To give you a little more excitement, the program will not only write the result of the sum, but also write all the sums used: 3 + 4 + 3 + 3 = 13.
 
-
 P: number OR string 
 R: total (string)
 E: '3433' => '3 + 4 + 3 + 3' = 13.
