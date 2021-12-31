@@ -2,7 +2,6 @@
 
 Given a non-empty array of non-empty integer arrays, multiply the contents of each nested array and return the smallest total.
 
-
 P: [[integers]]
 R: number (smallest total from multiplied contents of array)
 E: input = [
