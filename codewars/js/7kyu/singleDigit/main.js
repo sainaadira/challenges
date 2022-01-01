@@ -26,7 +26,6 @@ P: - create a function to convert n to binary
 
  */
 
-
 /*
 my first attempt
 
@@ -37,7 +36,6 @@ let converted = [...toBinary(n)].map(el => Number(el))
   return converted.reduce((a, b) => a + b, 0)
 }
 */
-
 
 // convert number to binary string
 const numToBinary = n => n.toString(2)
