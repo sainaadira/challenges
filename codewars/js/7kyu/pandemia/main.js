@@ -49,7 +49,6 @@ P: split string into an array
    return 100 * infected/total population
  */
 
-
 const infected = s => {
   let map1 = s.split('X')
   let totalPopulation = 0
