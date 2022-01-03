@@ -23,7 +23,6 @@ P:  i need to create an empy object (hash map) to store swapped values
     if not, create an empty array for it
     if so, push the value into an array
     return map
-
  */
 
 const switchDict = dict => {
