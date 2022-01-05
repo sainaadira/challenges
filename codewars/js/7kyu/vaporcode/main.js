@@ -13,6 +13,5 @@ Pseudocode:
  - return string
  */
 
-
 // code that works solves all codewars test cases
 const vaporcode = (string) => string.toUpperCase().split(' ').join('').split('').join('  ')
