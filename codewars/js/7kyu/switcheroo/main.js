@@ -5,8 +5,6 @@ Given a string made up of letters a, b, and/or c, switch the position of letters
 
 Example:
 
-
-
 P: string
 R: string (a & b switched/ c in og postion)
 E: 'acb' --> 'bca'
