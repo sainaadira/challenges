@@ -38,8 +38,6 @@ const broken = x => {
 //a one liner!
 const broken = x => x.split('').map(el => el === '0' ? '1' : '0').join('')
 
-
-
 // tried this solution again with a for loop
 const broken = (x) => {
   let str = ''
