@@ -13,7 +13,6 @@ P: create empty string to hold result
    loop through sentence array 
    concatenate result to = all first letters of word capitalized and rest of letters stay as they are
    return result and remove extra space using trim
-
 */
 
 String.prototype.toJadenCase = function () {
@@ -26,8 +25,6 @@ String.prototype.toJadenCase = function () {
   return result.trim()
 }
 
-
-//
 
 String.prototype.toJadenCase = function () {
   return String(this).split(' ').map(el => el.charAt(0).toUpperCase() + el.slice(1)).join(' ')
