@@ -42,8 +42,6 @@ const DNAStrand = dna => {
   return dnaResult
 }
 
-
-
 // another solution using an obj
 
 const dnaStrand = dna => {
