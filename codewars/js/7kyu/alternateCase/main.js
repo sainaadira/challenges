@@ -12,7 +12,6 @@ P: split string into an array
    letter is uppercase => lowercase
    maybe iterate with map() to return a new array
   join string back together
-     
  */
 
 const alternateCase = s => s.split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('')
