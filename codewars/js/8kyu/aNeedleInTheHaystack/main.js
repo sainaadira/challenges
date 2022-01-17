@@ -11,7 +11,6 @@ After your function finds the needle it should return a message (as a string) th
 findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 should return "found the needle at position 5"
 
-
 data working with: array
 returns: string with index postion of needle
 
@@ -22,7 +21,6 @@ return a string with 'found the needle at postion with the number of the postion
 
 The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. (mdn)
 */
-
 
 const findNeedle = haystack => {
   let indexPostion = haystack.indexOf('needle')
