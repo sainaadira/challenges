@@ -6,7 +6,6 @@ Your task is to create functionisDivideBy (or is_divide_by) to check if an integ
 
 A few cases:
 
-
 (-12, 2, -6)  ->  true
 (-12, 2, -5)  ->  false
 
@@ -16,7 +15,6 @@ A few cases:
 (4, 1, 4)     ->  true
 (15, -5, 3)   ->  true
 */
-
 
 const isDivideBy = (number, a, b) => {
   if (number % a === 0 && number % b === 0) {
