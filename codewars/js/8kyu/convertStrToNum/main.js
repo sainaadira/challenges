@@ -14,7 +14,6 @@ data working with: string
 returns => number
 
 using built in Number method to convert string to number
-
 */
 
 const stringToNumber = str => Number(str)
