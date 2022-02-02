@@ -29,8 +29,6 @@ P: loop through the array backwards
 
 */
 
-
-
 const plusOne = digits => {
   for (let i = digits.length - 1; i >= 0; i--) {
     if (digits[i] < 9) {
