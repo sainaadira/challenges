@@ -20,7 +20,7 @@ const twoSum = (nums, target) => {
 }
 
 
-//hash map:  O(n) 
+//hash map: O(n) 
 const twoSum = (nums, target) => {
   let map = {}
   for (let i = 0; i < nums.length; i++) {
