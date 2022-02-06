@@ -6,6 +6,5 @@ Array can contain numbers or strings. X can be either. Return true if the array 
 
 Looking for more, loop-restrained fun? Check out the other kata in the series: */
 
-
 const check = (a, x) => a.includes(x)
 
