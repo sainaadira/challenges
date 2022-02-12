@@ -13,15 +13,6 @@ howManyLightsabersDoYouOwn("Zach") === 18
 howManyLightsabersDoYouOwn() === 0
 */
 
-
-const howManyLightsabersDoYouOwn = name => {
-  if (name === 'Zach') {
-    return 18
-  } else {
-    return 0
-  }
-}
-
 // with ternary operator
 const howManyLightsabersDoYouOwn = name => name === 'Zach' ? 18 : 0
 
