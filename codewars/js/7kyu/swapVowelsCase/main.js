@@ -22,7 +22,6 @@ P: name the vowels in a string
    condtionally change casing of vowels (function)
    join array back to string
    return
-
 */
 
 const swapVowelCase = str => {
