@@ -19,6 +19,7 @@ as a reminder:
 math.ceil()- rounds up to the nearest whole integer
 */
 
+
 const calculateTip = (amount, rating) => {
   switch (rating.toLowerCase()) {
     case 'terrible':
