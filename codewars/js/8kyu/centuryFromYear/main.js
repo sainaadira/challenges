@@ -8,8 +8,6 @@ Given a year, return the century it is in.
 
 example:
 
-
-
 data working with: number (param)
 returns => number
 
@@ -42,5 +40,5 @@ const century = year => {
 
 OR
 
-const century = year => Math.ceil(year / 100); // math.ceil to round up to nearest century (100)
+const century = year => Math.ceil(year / 100)
 
