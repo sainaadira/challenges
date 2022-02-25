@@ -9,7 +9,6 @@ Examples
 -456 -> -654
 1000 ->    1
 
-
 P: number
 R: number (reversed input number)
 E: 123 => 321  || -456 => -654
