@@ -10,8 +10,5 @@ Lastly, when we want to take one action if a boolean is true, and another if it 
 
 For this kata, don't worry about edge cases like where unexpected input is passed to the function. You'll get to worry about these enough in later exercises */
 
-
-
-
 const booleanToString = b => String(b)
 
