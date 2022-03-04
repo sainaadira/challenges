@@ -13,6 +13,5 @@ You can find a factor by dividing numbers. If the remainder is 0 then the number
 You can use the mod operator (%) in most languages to check for a remainder
 For example 2 is not a factor of 7 because: 7 % 2 = 1 */
 
-
 const checkForFactor = (base, factor) => base % factor === 0
 

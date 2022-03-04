@@ -31,7 +31,6 @@ countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -
 
 
 // this solution passed all tests 
-
 const countPositivesSumNegatives = input => {
   return input && input.length ? [input.filter(pos => pos > 0).length, input.filter(neg => neg < 0).reduce((a, b) => a + b, 0)] : []
 }

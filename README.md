@@ -1,3 +1,3 @@
-# challenges
-a repo of all of my codewars/leetcode in javacript  
+# Challenges
 
+-- a repo of all of my coding challenges 
