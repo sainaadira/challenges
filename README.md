@@ -1,3 +1,3 @@
 # Challenges
 
--- a repo of all of my coding challenges 
+- a repo of all of my coding challenges 
