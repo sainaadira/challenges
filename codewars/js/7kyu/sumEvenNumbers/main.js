@@ -16,7 +16,6 @@ P:  filter through the array
    return numbers
  */
 
-
 const sumEvenNumbers = input => {
   let even = input.filter(el => el % 2 === 0)
   return even.reduce((a, b) => a + b, 0)
