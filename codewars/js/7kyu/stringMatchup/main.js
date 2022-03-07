@@ -12,7 +12,6 @@ E: array1 = ['abc', 'abc', 'xyz', 'cde', 'uvw']
 P:  map through arr 2 to return a new array
    filter through arr1 and check if elements in arr 2 === elements in array 1
    grab the length
-
 */
 
 const stringMatchup = (arr1, arr2) => arr2.map(a => arr1.filter(b => a === b).length)
