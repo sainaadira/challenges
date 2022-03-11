@@ -18,9 +18,7 @@ P: convert number into a string, split, reverse + join it
   ** was not sure how to do this so i used this for guidance: src: freecodecamp
   Multiply it by the sign of the original number — to maintain the negative value.
    
-
 */
-
 
 const reverseNumber = n => {
   let num = parseFloat(String(n).split('').reverse().join(''))
