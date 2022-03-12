@@ -14,6 +14,5 @@ P: because i have an array, i can join the array into a string.
 
 const wordsToSentence = words => words.join(' ')
 
-
 // this can also be done with reduce
 const wordsToSentence2 = words => words.reduce((prev, acc) => prev + ' ' + acc)
