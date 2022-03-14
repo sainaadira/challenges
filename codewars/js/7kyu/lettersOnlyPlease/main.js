@@ -30,5 +30,4 @@ p:
    return result.join('')
 */
 
-
 const removeChars = (s) => s.split('').filter(s => s === ' ' || s.toLowerCase() !== s.toUpperCase()).join('')
