@@ -17,8 +17,6 @@ removeChars('1 + 1 = 2')    ==> '    ' (string with 4 spaces)
 
 removeChars("0123456789(.)+,|[]{}=@/~;^$'<>?-!*&:#%_")
 
-
-
 p: string with symbols and numbers
 r: string that contains only A-Z, a-z
 e: '.tree1' => 'tree'
