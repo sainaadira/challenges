@@ -21,7 +21,7 @@ pseudocode:
 -mapping letter to number (create obj {letter: number})
 -loop through the text array that has all letters split
 -checking to see if the map contains letter that holds all chars
-- if letter is not one of keys in obj, it's not a letter, it's a random char, space (dont return)
+- if letter is not one of keys in obj, it's not a letter, it's a random char, space (don't return)
 - pushing the number that is associated with the val of that letter
 - join array back to str
  */
