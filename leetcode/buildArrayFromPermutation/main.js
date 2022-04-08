@@ -30,8 +30,7 @@ const buildArray = nums => {
   return ans
 }
 
-// with map
-
+// map
 const buildArray = nums => {
   return nums.map(val => nums[val])
 }
