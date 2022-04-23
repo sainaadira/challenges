@@ -1,6 +1,5 @@
 /* https://www.codewars.com/kata/59dd3ccdded72fc78b000b25/train/javascript
 
-
 Complete the function which returns the weekday according to the input number:
 
 1 returns "Sunday"
