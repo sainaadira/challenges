@@ -5,6 +5,5 @@ Create a function that takes 2 positive integers in form of a string as an input
   sumStr("4", "5")    // should output "9"
   sumStr("34", "5")   // should output "39" */
 
-
 const sumStr = (a, b) => `${Number(a) + Number(b)}`
 
